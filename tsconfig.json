@@ -1,0 +1,9 @@
+{
+    "include": [
+        "buildSrc/build.ts",
+    ],
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "moduleResolution": "node"
+    }
+}
