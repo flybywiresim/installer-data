@@ -22,5 +22,6 @@ jobs:
         env:
           BUNNY_BUCKET_PASSWORD: ${{ secrets.BUNNY_BUCKET_PASSWORD }}
           BUNNY_SECRET_TOKEN: ${{ secrets.BUNNY_SECRET_TOKEN }}
+          BUNNY_BUCKET_DESTINATION: installer/config
         run: |
           ./scripts/cdn.sh $BUNNY_BUCKET_DESTINATION ./dist
