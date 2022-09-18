@@ -329,6 +329,6 @@ export type Publisher = {
 }
 
 export interface Configuration {
-    version: 1,
+    version: number,
     publishers: Publisher[],
 }
