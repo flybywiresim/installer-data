@@ -61,7 +61,7 @@ try {
         process.exit(-5);
     }
 
-    fs.writeFileSync(path.join('dist', `${fileName}`), compiledConfigString);
+    fs.writeFileSync(path.join('dist', `${fileName}.json`), compiledConfigString);
 } catch (e) {
     process.stderr.write(`Error while writing config to disk: ${e.message}`);
     process.exit(-5);
