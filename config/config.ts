@@ -1,4 +1,4 @@
-import { Configuration } from "./lib";
+import { Configuration } from "../lib";
 
 const config: Configuration = {
     version: 1,

@@ -3,7 +3,7 @@ import * as fs from "fs";
 import path from "path";
 
 const program = ts.createProgram([
-    '../config.ts',
+    '../config/config.ts',
 ], { 'listEmittedFiles': true });
 
 const emitResult = program.emit();
