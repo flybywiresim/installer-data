@@ -3,15 +3,21 @@ export interface ExternalLink {
     title: string,
 }
 
-export interface DirectorySpec {
+export interface DirectoryDefinition {
     location: {
         in: 'community' | 'packageCache' | 'package',
         path: string,
     },
 }
 
-export interface NamedDirectorySpec extends DirectorySpec {
+export interface NamedDirectoryDefinition extends DirectoryDefinition {
     title: string,
+}
+
+export type AddonVersion = {
+    title: string,
+    date: Date,
+    type: 'major' | 'minor' | 'patch'
 }
 
 export type GithubReleaseReleaseModel = {
@@ -57,7 +63,14 @@ export interface AddonBackgroundService {
     runCheckExternalAppRef: string,
 
     /**
+     * Whether autostart configuration is available for the background service
+     */
+    enableAutostartConfiguration?: boolean,
+
+    /**
      * Command line arguments to run this background service with
+     *
+     * Defaults to `true`.
      */
     commandLineArgs?: string[],
 }
@@ -74,7 +87,7 @@ export interface AddonMyInstallPageConfiguration {
     /**
      * Folder quick-links to show. Those will be shown in a section on the bottom, with a header, and open the file explorer.
      */
-    directories: NamedDirectorySpec[],
+    directories: NamedDirectoryDefinition[],
 }
 
 export interface Addon {
@@ -95,6 +108,7 @@ export interface Addon {
     alternativeNames?: string[],
     tracks: AddonTrack[],
     dependencies?: AddonDependency[],
+    incompatibleAddons?: AddonIncompatibleAddon[],
     configurationAspects?: ConfigurationAspect[],
     disallowedRunningExternalApps?: string[],
     backgroundService?: AddonBackgroundService,
@@ -134,6 +148,28 @@ export interface AddonDependency {
      * Modal text that shows below the dependency / parent addon on the pre-install modal (if optional) and the removal dialog (if not optional).
      */
     modalText?: string,
+}
+
+/**
+ * fields from the addon's manifest.json
+ */
+export interface AddonIncompatibleAddon {
+    /**
+     * Fields from the addon's manifest.json
+     * This need to be configured identically to the addon's manifest.json
+     * Leaving a field empty ignores it for the search.
+     */
+    title?: string,
+    creator?: string,
+    package_version?: string,
+    /**
+     * folder name in community - added later to show the user the corresponding folder name - not used for searching
+     */
+    folder?: string,
+    /**
+     * Description of the nature of the incompatibility to display to the user in a warning dialog
+     */
+    description?: string
 }
 
 export interface AddonTechSpec {
@@ -275,7 +311,12 @@ type UrlPublisherButton = BasePublisherButton & {
     url: string,
 }
 
-export type PublisherButton = UrlPublisherButton
+type InternalAction = BasePublisherButton & {
+    action: 'internal',
+    call: 'fbw-local-api-config',
+}
+
+export type PublisherButton = UrlPublisherButton | InternalAction
 
 export type Publisher = {
     name: string,
