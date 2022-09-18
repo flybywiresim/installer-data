@@ -2,9 +2,7 @@ import * as ts from 'typescript';
 import * as fs from "fs";
 import path from "path";
 
-const program = ts.createProgram([
-    '../config.ts',
-], { 'listEmittedFiles': true });
+const program = ts.createProgram(['../config/config.ts',], { 'listEmittedFiles': true });
 
 const emitResult = program.emit();
 
@@ -22,7 +20,6 @@ allDiagnostics.forEach(diagnostic => {
         process.stderr.write(ts.flattenDiagnosticMessageText(diagnostic.messageText, '\n') + '\n');
     }
 });
-
 
 if (emitResult.emitSkipped) {
     process.stderr.write('TypeScript emit failed\n');
@@ -64,7 +61,7 @@ try {
         process.exit(-5);
     }
 
-    fs.writeFileSync(path.join('dist', `${fileName}.json`), compiledConfigString);
+    fs.writeFileSync(path.join('dist', `${fileName}`), compiledConfigString);
 } catch (e) {
     process.stderr.write(`Error while writing config to disk: ${e.message}`);
     process.exit(-5);
