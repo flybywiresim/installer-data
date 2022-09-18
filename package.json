@@ -2,7 +2,7 @@
     "name": "fbw-installer-data",
     "version": "v0.1.0",
     "scripts": {
-        "build": "tsc && cd buildSrc && node build.js config.json"
+        "build": "tsc && cd buildSrc && node build.js"
     },
     "devDependencies": {
         "typescript": "^4.7.4",

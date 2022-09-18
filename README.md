@@ -10,11 +10,16 @@ The aim of this project is to provide a means to separate the installer configur
 
 The configuration is defined in the `config.ts` file.
 
+Once merged to staging or main, the configuration is automatically deployed to the CDN.
+https://cdn.flybywiresim.com/installer/config/config.json
+
 ## Contributing
 
 ### Configuration
 
 To change the configuration, please submit a pull request with your changes to the `config.ts` file.
+
+To build the configuration, run `npm run build <filename>`. The resulting json file will be placed in the `dist` folder.
  
 ### Installer Data project
 
