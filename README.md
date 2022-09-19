@@ -19,7 +19,7 @@ https://cdn.flybywiresim.com/installer/config/config.json
 
 To change the configuration, please submit a pull request with your changes to the `config.ts` file.
 
-To build the configuration, run `npm run build <filename>`. The resulting json file will be placed in the `dist` folder.
+To build the configuration locally, run `npm run build <filename>`. The resulting json file will be placed in the `dist` folder.
  
 ### Installer Data project
 
@@ -27,6 +27,6 @@ Please submit a pull request with your changes to the `installer-data` project.
                                                        
 ## Planned Feature
 
-- [] Basic configuration be downloadable from the CDN
-- [] Add features to the installer to allow for configuration updates
+- [] Basic configuration be downloadable from the CDN (https://github.com/flybywiresim/installer/pull/400)
+- [] Add features to the installer to allow for configuration updates (https://github.com/flybywiresim/installer/pull/400)
 - [] Modularize the installer configuration (e.g. publisher, add-ons, etc. get their own files and build will compile them into a single file)
