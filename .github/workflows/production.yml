@@ -1,0 +1,27 @@
+name: production
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  build:
+    # Prevent running this on forks
+    if: github.repository_owner == 'flybywiresim'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: Run npm install
+        run: |
+          npm ci
+      - name: Build config
+        run: |
+          npm run build -- production
+      - name: Upload to Bunny CDN
+        env:
+          BUNNY_BUCKET_PASSWORD: ${{ secrets.BUNNY_BUCKET_PASSWORD }}
+          BUNNY_SECRET_TOKEN: ${{ secrets.BUNNY_SECRET_TOKEN }}
+          BUNNY_BUCKET_DESTINATION: installer/config
+        run: |
+          ./scripts/cdn.sh $BUNNY_BUCKET_DESTINATION ./dist
