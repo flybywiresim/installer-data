@@ -463,9 +463,15 @@ const config: Configuration = {
             ],
             buttons: [
                 {
+                    text: 'Website',
+                    action: 'openBrowser',
+                    url: 'https://www.fslivetrafficliveries.com/',
+                },
+                {
                     text: 'Discord',
                     action: 'openBrowser',
                     url: 'https://discord.gg/suMR56wCrn',
+                    inline: true,
                 },
             ],
         },
