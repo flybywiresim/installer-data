@@ -421,7 +421,7 @@ const config: Configuration = {
                         {
                             name: 'Release',
                             key: 'release',
-                            url: 'https://packages.fslivetrafficliveries.com/installer/',
+                            url: 'https://github.com/FSLiveTrafficLiveries/base/releases/latest/download/',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'CDN',
