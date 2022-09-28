@@ -12,7 +12,7 @@ The configuration is defined in the `config.ts` file.
 
 Once merged to staging, the configuration is automatically deployed to the CDN (`https://cdn.flybywiresim.com/installer/config/staging.json`).
 
-A maintainer can then manually deploy the configuration to production (`https://cdn.flybywiresim.com/installer/config/production.json`).
+A maintainer can then manually deploy the configuration to the production branch (`https://cdn.flybywiresim.com/installer/config/production.json`).
 
 ## Contributing
 
@@ -22,9 +22,15 @@ To change the configuration, please submit a pull request with your changes to t
 
 To build the configuration locally, run `npm run build <filename>`. The resulting json file will be placed in the `dist` folder.
 
-Once a PR is created the configuration will be automatically build and deployed to the CDN. The URL will be `https://cdn.flybywiresim.com/installer/config/pr-<PR-NUMBER>.json`
+If a PR is created from a branch of the main repo the configuration will be automatically build and deployed to the CDN. 
+The URL will be `https://cdn.flybywiresim.com/installer/config/pr-<PR-NUMBER>.json`.
 
-For testing the PR configuration copy the URL and paste it into the installer configuration URL field in the installer settings. Ask on the FlyByWire's Discord [#installer](https://discord.com/channels/738864299392630914/757387126173204540) channel on how to do this.
+From a branch on a fork it is still possible to test the configuration by providing the Installer with the fork's 
+GitHub url to the raw config.ts file (e.g. `https://raw.githubusercontent.com/flybywiresim/installer-data/staging/config/config.ts`)
+
+For testing the PR configuration copy the URL and paste it into the installer configuration URL field in the installer 
+settings. Ask on the FlyByWire's Discord [#installer](https://discord.com/channels/738864299392630914/757387126173204540) 
+channel on how to do this.
 
 ### Installer Data Project
 
