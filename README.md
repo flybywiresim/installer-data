@@ -20,7 +20,7 @@ A maintainer can then manually deploy the configuration to the production branch
 
 To change the configuration, please submit a pull request with your changes to the `config.ts` file.
 
-To build the configuration locally, run `npm run build <filename>`. The resulting json file will be placed in the `dist` folder.
+To build the configuration locally, run `npm run build <filename>`. The resulting json file will be placed in the `dist` folder. This is only for testing purposes, you will not need the locally built config file. 
 
 If a PR is created from a branch of the main repo the configuration will be automatically build and deployed to the CDN. 
 The URL will be `https://cdn.flybywiresim.com/installer/config/pr-<PR-NUMBER>.json`.
