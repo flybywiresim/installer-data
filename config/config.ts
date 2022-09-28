@@ -389,6 +389,93 @@ const config: Configuration = {
             ],
         },
         {
+            name: 'FSLTL',
+            key: 'fsltl',
+            logoUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/publisher-icons/fsltl/fsltl-test-2.png',
+            logoSize: 36,
+            defs: [
+                {
+                    kind: 'externalApp',
+                    key: 'traffic-injector-app',
+                    prettyName: 'FSLTL Traffic Injector',
+                    detectionType: 'http',
+                    url: 'http://localhost:42888',
+                    killUrl: 'http://localhost:42888/kill',
+                    killMethod: 'POST',
+                },
+            ],
+            addons: [
+                {
+                    key: 'traffic-base-models',
+                    name: 'FSLTL Traffic',
+                    aircraftName: 'FSLTL Traffic',
+                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/base-models/dark.svg',
+                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/base-models/light.svg',
+                    enabled: true,
+                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
+                    shortDescription: 'FSLTL Traffic Base Models',
+                    description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flight Radar 24.\n',
+                    targetDirectory: 'fsltl-traffic-base',
+                    alternativeNames: [],
+                    tracks: [
+                        {
+                            name: 'Release',
+                            key: 'release',
+                            url: 'https://github.com/FSLiveTrafficLiveries/base/releases/latest/download/',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'CDN',
+                            },
+                            description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flight Radar 24.\n',
+                        },
+                    ],
+                },
+                {
+                    key: 'traffic-injector',
+                    name: 'FSLTL Injector',
+                    aircraftName: 'FSLTL Traffic',
+                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/injector/dark.svg',
+                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/injector/light.svg',
+                    enabled: true,
+                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
+                    shortDescription: 'FSLTL Traffic Injector Software',
+                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on FR24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
+                    targetDirectory: 'fsltl-traffic-injector',
+                    tracks: [
+                        {
+                            name: 'Release',
+                            key: 'release',
+                            url: 'https://packages.fslivetrafficliveries.com/injector/',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'CDN',
+                            },
+                            description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on FR24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
+                        },
+                    ],
+                    backgroundService: {
+                        executableFileBasename: 'fsltl-trafficinjector',
+                        runCheckExternalAppRef: '@/traffic-injector-app',
+                        enableAutostartConfiguration: false,
+                    },
+                    disallowedRunningExternalApps: ['@/traffic-injector-app'],
+                },
+            ],
+            buttons: [
+                {
+                    text: 'Website',
+                    action: 'openBrowser',
+                    url: 'https://www.fslivetrafficliveries.com/',
+                },
+                {
+                    text: 'Discord',
+                    action: 'openBrowser',
+                    url: 'https://discord.gg/suMR56wCrn',
+                    inline: true,
+                },
+            ],
+        },
+        {
             name: 'Synaptic Simulations',
             key: 'synaptic',
             logoUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/publisher-icons/synaptic/0.png',
