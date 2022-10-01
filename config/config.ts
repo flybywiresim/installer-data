@@ -157,7 +157,7 @@ const config: Configuration = {
                         {
                             title: 'A330-900neo (Stable)',
                             creator: 'Headwind',
-                            description: "REMOVE this add-on before installing and using the A32NX. This add-on overrides A32NX components and causes issues when using the A32NX",
+                            description: "Please consider removing this add-on before installing and using the A32NX. This add-on overrides A32NX components and can cause issues when using the A32NX",
                         },
                         {
                             title: '[MOD] Mugz FBW A32NX Dev',
