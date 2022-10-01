@@ -155,7 +155,7 @@ const config: Configuration = {
                             description: "REMOVE this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
                         },
                         {
-                            title: ' A330-900neo (Stable)',
+                            title: 'A330-900neo (Stable)',
                             creator: 'Headwind',
                             description: "REMOVE this add-on before installing and using the A32NX. This add-on overrides A32NX components and causes issues when using the A32NX",
                         },
