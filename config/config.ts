@@ -414,7 +414,7 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Base Models',
-                    description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flight Radar 24.\n',
+                    description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
                     targetDirectory: 'fsltl-traffic-base',
                     alternativeNames: [],
                     tracks: [
@@ -426,7 +426,7 @@ const config: Configuration = {
                             releaseModel: {
                                 type: 'CDN',
                             },
-                            description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flight Radar 24.\n',
+                            description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
                         },
                     ],
                 },
