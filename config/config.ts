@@ -450,7 +450,7 @@ const config: Configuration = {
                             releaseModel: {
                                 type: 'CDN',
                             },
-                            description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on FR24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
+                            description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on Flightradar24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
                         },
                     ],
                     backgroundService: {
