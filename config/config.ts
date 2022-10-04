@@ -439,7 +439,7 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Injector Software',
-                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on FR24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
+                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on Flightradar24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
                     targetDirectory: 'fsltl-traffic-injector',
                     tracks: [
                         {
