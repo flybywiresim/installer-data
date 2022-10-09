@@ -149,6 +149,7 @@ const config: Configuration = {
                         },
                     ],
                     incompatibleAddons: [
+                        // packageVersion follows: https://www.npmjs.com/package/semver
                         {
                             title: 'LVFR A321neo FBW A32NX Compatibility Mod',
                             creator: 'TJC.Aviation',
@@ -157,11 +158,13 @@ const config: Configuration = {
                         {
                             title: 'A330-900neo (Stable)',
                             creator: 'Headwind',
+                            packageVersion: '<=0.200.0-89b88a859',
                             description: "Please consider removing this add-on before installing and using the A32NX. This add-on overrides A32NX components and can cause issues when using the A32NX",
                         },
                         {
                             title: '[MOD] Mugz FBW A32NX Dev',
                             creator: "Mugz",
+                            packageVersion: '<=0.8.0-dev',
                             description: "REMOVE this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
                         },
                         {
