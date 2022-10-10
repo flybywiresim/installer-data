@@ -161,6 +161,9 @@ export interface AddonIncompatibleAddon {
      */
     title?: string,
     creator?: string,
+    /**
+     * packageVersion syntax follows: https://www.npmjs.com/package/semver
+     */
     packageVersion?: string,
     /**
      * folder name in community - added later to show the user the corresponding folder name - not used for searching
