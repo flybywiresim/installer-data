@@ -428,6 +428,16 @@ const config: Configuration = {
                             },
                             description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
                         },
+                        {
+                            name: 'Development',
+                            key: 'dev',
+                            url: 'hhttps://github.com/FSLiveTrafficLiveries/base/releases/download/1.1.0-alpha/',
+                            isExperimental: true,
+                            releaseModel: {
+                                type: 'CDN',
+                            },
+                            description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
+                        },
                     ],
                 },
                 {
