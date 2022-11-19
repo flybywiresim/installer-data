@@ -431,7 +431,7 @@ const config: Configuration = {
                         {
                             name: 'Development',
                             key: 'dev',
-                            url: 'hhttps://github.com/FSLiveTrafficLiveries/base/releases/download/1.1.0-alpha/',
+                            url: 'https://github.com/FSLiveTrafficLiveries/base/releases/download/1.1.0-alpha/',
                             isExperimental: true,
                             releaseModel: {
                                 type: 'CDN',
