@@ -149,20 +149,32 @@ const config: Configuration = {
                         },
                     ],
                     incompatibleAddons: [
+                        // packageVersion syntax follows: https://www.npmjs.com/package/semver
                         {
                             title: 'LVFR A321neo FBW A32NX Compatibility Mod',
                             creator: 'TJC.Aviation',
                             description: "REMOVE this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
                         },
                         {
-                            title: 'Toolbar Pushback',
-                            creator: "AmbitiousPilots",
-                            description: "This add-on sometimes causes performance issues and also prevents the A32NX from taxiing. Consider removing it in case of issues.",
+                            title: 'A330-900neo (Stable)',
+                            creator: 'Headwind',
+                            // packageVersion: '<=0.200.0-89b88a859',
+                            description: "Please consider removing this add-on before installing and using the A32NX. This add-on overrides A32NX components and can cause issues when using the A32NX",
                         },
                         {
                             title: '[MOD] Mugz FBW A32NX Dev',
                             creator: "Mugz",
                             description: "REMOVE this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: '[MOD] Mugz FBW A32NX Stable',
+                            creator: "Mugz",
+                            description: "REMOVE this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: 'Toolbar Pushback',
+                            creator: "AmbitiousPilots",
+                            description: "This add-on sometimes causes performance issues and also sometimes prevents the A32NX from taxiing. Consider removing it in case of issues.",
                         },
                     ],
                     myInstallPage: {
