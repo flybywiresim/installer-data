@@ -98,16 +98,16 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Development',
+                            name: 'Development (CF)',
                             key: 'a32nx-dev',
-                            url: 'https://cdn.flybywiresim.com/addons/a32nx/master',
+                            url: 'https://flybywirecdn.com/addons/a32nx/test-3',
                             alternativeUrls: [
                                 'external/a32nx/master',
                                 // move old experimental users over to dev
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw-cap',
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw',
                             ],
-                            description: 'Development will have the latest features that will end up in the next stable. ' +
+                            description: '(CloudFlare R2 CDN Test) Development will have the latest features that will end up in the next stable. ' +
                                 'Bugs are to be expected. It updates whenever something is added to the \'master\' ' +
                                 'branch on Github. Please visit our discord for support.',
                             isExperimental: false,
