@@ -156,12 +156,6 @@ const config: Configuration = {
                             description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and to break the A32NX.",
                         },
                         {
-                            title: 'A330-900neo (Stable)',
-                            creator: 'Headwind',
-                            // packageVersion: '<=0.200.0-89b88a859',
-                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and to break the A32NX.",
-                        },
-                        {
                             title: '[MOD] Mugz FBW A32NX Dev',
                             creator: "Mugz",
                             description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
