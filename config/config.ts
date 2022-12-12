@@ -157,22 +157,22 @@ const config: Configuration = {
                         },
                         {
                             title: 'LVFR A321neo Extreme',
-                            version: '<0.4.0',
+                            packageVersion: '<0.4.0',
                             description: "It is recommended to upgrade to the latest version (0.4.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
                         },
                         {
                             title: 'Horizon Simulations A321neo',
-                            version: '<0.4.0',
+                            packageVersion: '<0.4.0',
                             description: "It is recommended to upgrade to the latest version (0.4.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
                         },
                         {
                             title: 'lvfr-airbus-a319-fbw-standalone',
-                            version: '<0.6.0',
+                            packageVersion: '<0.6.0',
                             description: "It is recommended to upgrade to the latest version (0.6.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
                         },
                         {
                             title: 'Horizon Simulations A319ceo',
-                            version: '<0.6.0',
+                            packageVersion: '<0.6.0',
                             description: "It is recommended to upgrade to the latest version (0.6.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
                         },
                         {
