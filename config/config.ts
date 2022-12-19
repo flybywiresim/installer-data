@@ -100,14 +100,15 @@ const config: Configuration = {
                         {
                             name: 'Development (CF)',
                             key: 'a32nx-dev',
-                            url: 'https://flybywirecdn.com/addons/a32nx/test-3',
+                            url: 'https://cdn.flybywiresim.com/addons/a32nx/master',
                             alternativeUrls: [
                                 'external/a32nx/master',
                                 // move old experimental users over to dev
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw-cap',
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw',
+                                'https://flybywirecdn.com/addons/a32nx/test-3',
                             ],
-                            description: '(CloudFlare R2 CDN Test) Development will have the latest features that will end up in the next stable. ' +
+                            description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Bugs are to be expected. It updates whenever something is added to the \'master\' ' +
                                 'branch on Github. Please visit our discord for support.',
                             isExperimental: false,
@@ -119,12 +120,13 @@ const config: Configuration = {
                         {
                             name: 'Experimental',
                             key: 'experimental',
-                            url: 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
+                            url: 'https://flybywirecdn.com/addons/a32nx/experimental',
                             alternativeUrls: [
                                 'external/a32nx/experimental',
                                 'https://cdn.flybywiresim.com/addons/a32nx/experimental',
+                                'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
                             ],
-                            description: 'This version is similar to the Development version, ' +
+                            description: '(CloudFlare R2 CDN Test) This version is similar to the Development version, ' +
                                 'but contains features that we wish to test publicly as we perfect them. ' +
                                 'The build is in practice stable most of the time, but you may encounter flight-breaking bugs, ' +
                                 'performance loss, crashes or other issues as the features present in this version are not completely finished. ' +
