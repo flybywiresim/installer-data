@@ -98,7 +98,7 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Development (CF)',
+                            name: 'Development',
                             key: 'a32nx-dev',
                             url: 'https://cdn.flybywiresim.com/addons/a32nx/master',
                             alternativeUrls: [
@@ -118,7 +118,7 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Experimental',
+                            name: 'Experimental (CF)',
                             key: 'experimental',
                             url: 'https://flybywirecdn.com/addons/a32nx/experimental',
                             alternativeUrls: [
