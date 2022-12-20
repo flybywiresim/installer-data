@@ -157,13 +157,11 @@ const config: Configuration = {
                         },
                         {
                             title: 'LVFR A321neo Extreme',
-                            packageVersion: '<0.4.0',
-                            description: "It is recommended to upgrade to the latest version (0.4.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
                         },
                         {
                             title: 'Horizon Simulations A321neo',
-                            packageVersion: '<0.4.0',
-                            description: "It is recommended to upgrade to the latest version (0.4.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
                         },
                         {
                             title: 'lvfr-airbus-a319-fbw-standalone',
