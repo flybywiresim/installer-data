@@ -188,6 +188,11 @@ const config: Configuration = {
                             creator: "AmbitiousPilots",
                             description: "This add-on sometimes causes performance issues and also sometimes prevents the A32NX from taxiing. Consider removing it if you experience these issues.",
                         },
+                        {
+                            title: 'Asobo_A320_A (A32NX Converted)',
+                            creator: "UnitDeath",
+                            description: "It is required to remove this livery before installing and using the A32NX as it breaks the A32NX",
+                        }
                     ],
                     myInstallPage: {
                         links: [
