@@ -156,7 +156,7 @@ const config: Configuration = {
                         {
                             title: 'Horizon Simulations A319ceo',
                             packageVersion: '<0.6.1',
-                            description: "It is recommended to upgrade to the latest version (0.6.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
+                            description: "It is recommended to upgrade to the latest version (0.6.1 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
                         },
                         {
                             title: 'Horizon Simulations A321neo',
@@ -173,8 +173,8 @@ const config: Configuration = {
                         },
                         {
                             title: 'lvfr-airbus-a319-fbw-standalone',
-                            packageVersion: '<0.6.0',
-                            description: "It is recommended to upgrade to the latest version (0.6.0 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
+                            packageVersion: '<0.6.1',
+                            description: "It is recommended to upgrade to the latest version (0.6.1 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
                         },
                         {
                             title: '[MOD] Mugz FBW A32NX Dev',
