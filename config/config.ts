@@ -160,7 +160,7 @@ const config: Configuration = {
                         },
                         {
                             title: 'Horizon Simulations A321neo',
-                            packageVersion: '<0.4.0',
+                            // packageVersion: '<0.4.0', see https://discord.com/channels/738864299392630914/785976111875751956/1055617417189011546
                             description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
                         },
                         {
