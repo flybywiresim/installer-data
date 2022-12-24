@@ -433,6 +433,13 @@ const config: Configuration = {
                     killUrl: 'http://localhost:42888/kill',
                     killMethod: 'POST',
                 },
+                {
+                    kind: 'externalApp',
+                    key: 'msfs',
+                    prettyName: 'MSFS',
+                    detectionType: 'tcp',
+                    port: 500,
+                },
             ],
             addons: [
                 {
@@ -459,6 +466,7 @@ const config: Configuration = {
                             description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
                         },
                     ],
+                    disallowedRunningExternalApps: ['@/msfs'],
                 },
                 {
                     key: 'traffic-injector',
