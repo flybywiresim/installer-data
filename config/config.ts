@@ -119,10 +119,11 @@ const config: Configuration = {
                         {
                             name: 'Experimental',
                             key: 'experimental',
-                            url: 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
+                            url: 'https://flybywirecdn.com/addons/a32nx/experimental',
                             alternativeUrls: [
                                 'external/a32nx/experimental',
                                 'https://cdn.flybywiresim.com/addons/a32nx/experimental',
+                                'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
                             ],
                             description: 'This version is similar to the Development version, ' +
                                 'but contains features that we wish to test publicly as we perfect them. ' +
