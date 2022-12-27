@@ -106,7 +106,6 @@ const config: Configuration = {
                                 // move old experimental users over to dev
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw-cap',
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw',
-                                'https://flybywirecdn.com/addons/a32nx/test-3',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Bugs are to be expected. It updates whenever something is added to the \'master\' ' +
@@ -118,7 +117,7 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Experimental (CF)',
+                            name: 'Experimental',
                             key: 'experimental',
                             url: 'https://flybywirecdn.com/addons/a32nx/experimental',
                             alternativeUrls: [
@@ -126,7 +125,7 @@ const config: Configuration = {
                                 'https://cdn.flybywiresim.com/addons/a32nx/experimental',
                                 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
                             ],
-                            description: '(CloudFlare R2 CDN Test) This version is similar to the Development version, ' +
+                            description: 'This version is similar to the Development version, ' +
                                 'but contains features that we wish to test publicly as we perfect them. ' +
                                 'The build is in practice stable most of the time, but you may encounter flight-breaking bugs, ' +
                                 'performance loss, crashes or other issues as the features present in this version are not completely finished. ' +
