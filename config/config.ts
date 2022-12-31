@@ -98,14 +98,16 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Development',
+                            name: 'Development (CF)',
                             key: 'a32nx-dev',
-                            url: 'https://cdn.flybywiresim.com/addons/a32nx/master',
+                            url: 'https://flybywirecdn.com/addons/a32nx/master',
                             alternativeUrls: [
                                 'external/a32nx/master',
                                 // move old experimental users over to dev
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw-cap',
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw',
+                                // move bunnycdn users to cloudflare
+                                'https://cdn.flybywiresim.com/addons/a32nx/master',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Bugs are to be expected. It updates whenever something is added to the \'master\' ' +
