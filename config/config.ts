@@ -98,7 +98,7 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Development (CF)',
+                            name: 'Development',
                             key: 'a32nx-dev',
                             url: 'https://flybywirecdn.com/addons/a32nx/master',
                             alternativeUrls: [
