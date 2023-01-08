@@ -83,11 +83,13 @@ const config: Configuration = {
                     ],
                     tracks: [
                         {
-                            name: 'Stable',
+                            name: 'Stable (CF)',
                             key: 'a32nx-stable',
-                            url: 'https://cdn.flybywiresim.com/addons/a32nx/stable',
+                            url: 'https://flybywirecdn.com/addons/a32nx/stable',
                             alternativeUrls: [
                                 'external/a32nx/stable',
+                                 // move bunnycdn users to cloudflare
+                                'https://cdn.flybywiresim.com/addons/a32nx/stable',
                             ],
                             description: 'Stable is our variant that has the least bugs and best performance. ' +
                                 'This version will not always be up to date but we guarantee its compatibility ' +
