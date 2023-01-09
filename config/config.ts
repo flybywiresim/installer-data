@@ -198,6 +198,12 @@ const config: Configuration = {
                             title: 'Asobo_A320_A (A32NX Converted)',
                             creator: "UnitDeath",
                             description: "It is required to remove this livery before installing and using the A32NX as it breaks the A32NX",
+                        },
+                        {
+                            title: 'xeffect-320',
+                            creator: "swingbird",
+                            // packageVersion: '<0.1.2', (the mod does provide accurate version info in manifest.json)
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. It is known known to override A32NX files and to break the A32NX.",
                         }
                     ],
                     myInstallPage: {
