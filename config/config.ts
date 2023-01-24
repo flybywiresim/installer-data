@@ -152,7 +152,7 @@ const config: Configuration = {
                             url: 'https://flybywirecdn.com/addons/a32nx/repo-refactor',
                             alternativeUrls: [
                             ],
-                            description: 'This is a testing version of the A32NX base on the master branch and build with ' +
+                            description: 'This is a test version of the A32NX based on the master branch and built with ' +
                                 'the new refactored repo structure. This requires extensive testing and feedback. Please ' +
                                 'report any issues in this PR: https://github.com/flybywiresim/a32nx/pull/7677',
                             isExperimental: false,
