@@ -159,6 +159,11 @@ const config: Configuration = {
                         // packageVersion syntax follows: https://www.npmjs.com/package/semver
                         // description: a short description of why the addon is incompatible
                         {
+                            title: 'FlightFlow | IMPROVED TEXTURES MOD - [A32NX]',
+                            creator: 'FlightFlow Team',
+                            description: "It is recommended to remove this mod before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
+                        },
+                        {
                             title: 'Horizon Simulations A319ceo',
                             packageVersion: '<0.6.1',
                             description: "It is recommended to upgrade to the latest version (0.6.1 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
