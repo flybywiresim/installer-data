@@ -161,7 +161,7 @@ const config: Configuration = {
                         {
                             title: 'FlightFlow | IMPROVED TEXTURES MOD - [A32NX]',
                             creator: 'FlightFlow Team',
-                            description: "It is recommended to remove this mod before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
+                            description: "It is recommended to remove this add-on/mod before installing and using the A32NX. This add-on/mod is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
                         },
                         {
                             title: 'Horizon Simulations A319ceo',
