@@ -187,6 +187,12 @@ const config: Configuration = {
                             description: "It is recommended to upgrade to the latest version (0.6.1 or later) or to remove this add-on before installing and using the A32NX. The older versions of this add-on are known to override A32NX components and to break the A32NX.",
                         },
                         {
+                            title: 'lvfr-airbus-a319-ceo-fbw-compatibility',
+                            creator: "FlyByWire Simulations, karuchie",
+                            // packageVersion: '<0.6.1',
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
+                        },
+                        {
                             title: '[MOD] Mugz FBW A32NX Dev',
                             description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
                         },
