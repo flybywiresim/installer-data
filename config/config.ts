@@ -188,7 +188,7 @@ const config: Configuration = {
                         },
                         {
                             title: 'lvfr-airbus-a319-ceo-fbw-compatibility',
-                            creator: "FlyByWire Simulations, karuchie",
+                            // creator: "FlyByWire Simulations, karuchie",
                             // packageVersion: '<0.6.1',
                             description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
                         },
