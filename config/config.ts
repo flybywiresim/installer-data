@@ -102,7 +102,7 @@ const config: Configuration = {
                         {
                             name: 'Development',
                             key: 'a32nx-dev',
-                            url: 'https://flybywirecdn.com/addons/a32nx/master',
+                            url: 'https://flybywirecdn.com/addons/a32nx/master-newrepo',
                             alternativeUrls: [
                                 'external/a32nx/master',
                                 // move old experimental users over to dev
