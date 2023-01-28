@@ -117,7 +117,7 @@ const config: Configuration = {
                             isExperimental: false,
                             releaseModel: {
                                 type: 'githubBranch',
-                                branch: 'master-legacy',
+                                branch: 'master',
                             },
                         },
                         {
