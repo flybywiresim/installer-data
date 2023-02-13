@@ -336,6 +336,38 @@ const config: Configuration = {
                         ],
                     },
                 },
+                {
+                    name: 'FBW Ingamepanels Checklist Fix',
+                    key: 'checklist-fix',
+                    category: '@checklist-fix',
+                    repoOwner: 'flybywiresim',
+                    repoName: 'a32nx',
+                    aircraftName: 'Checklist Fix',
+                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/dark.svg',
+                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/light.svg',
+                    enabled: true,
+                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fbw-simbridge/0.png'],
+                    backgroundImageShadow: false,
+                    shortDescription: 'Checklist Fix',
+                    description: 'This is a fix mod to a bug in the MSFS ingamepanels for checklists. As this mod will impact' +
+                        'all aircraft it has been made as a separate mod so users can uninstall it when issues arise.',
+                    targetDirectory: 'flybywire-ingamepanels-checklist-fix',
+                    tracks: [
+                        {
+                            name: 'Release',
+                            key: 'checklist-fix',
+                            releaseModel: {
+                                type: 'githubBranch',
+                                branch: 'master',
+                            },
+                            url: 'http://flybywirecdn.com/addons/ingamepanels-checklist-fix/master/',
+                            isExperimental: false,
+                            description: 'This is a fix mod to a bug in the MSFS ingamepanels for checklists. As this mod will impact' +
+                                'all aircraft it has been made as a separate mod so users can uninstall it when issues arise.',
+                        },
+                    ],
+                    disallowedRunningExternalApps: ['@/msfs'],
+                },
             ],
             buttons: [
                 {
