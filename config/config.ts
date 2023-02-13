@@ -153,7 +153,7 @@ const config: Configuration = {
                             modalText: 'SimBridge allows the A32NX to expose remote tools like the Web MCDU, as well as use the external terrain database.',
                         },
                         {
-                            addon: '@flybywiresim/checklist-fix',
+                            addon: '@flybywiresim/checklistfix',
                             optional: true,
                             modalText: 'Checklist Fix',
                         },
@@ -343,8 +343,8 @@ const config: Configuration = {
                 },
                 {
                     name: 'FBW Ingamepanels Checklist Fix',
-                    key: 'checklist-fix',
-                    category: '@checklist-fix',
+                    key: 'checklistfix',
+                    category: '@checklistfix',
                     repoOwner: 'flybywiresim',
                     repoName: 'a32nx',
                     aircraftName: 'Checklist Fix',
@@ -360,7 +360,7 @@ const config: Configuration = {
                     tracks: [
                         {
                             name: 'Release',
-                            key: 'checklist-fix',
+                            key: 'checklistfix',
                             releaseModel: {
                                 type: 'githubBranch',
                                 branch: 'master',
