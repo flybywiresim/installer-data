@@ -152,6 +152,11 @@ const config: Configuration = {
                             optional: true,
                             modalText: 'SimBridge allows the A32NX to expose remote tools like the Web MCDU, as well as use the external terrain database.',
                         },
+                        {
+                            addon: '@flybywiresim/checklist-fix',
+                            optional: true,
+                            modalText: 'Checklist Fix',
+                        },
                     ],
                     incompatibleAddons: [
                         // title: the exact title as it appears in the manifest.json
