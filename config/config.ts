@@ -20,6 +20,11 @@ const config: Configuration = {
                 },
                 {
                     kind: 'addonCategory',
+                    key: 'msfsfixes',
+                    title: 'MSFS Fix',
+                },
+                {
+                    kind: 'addonCategory',
                     key: 'simbridge',
                     styles: ['align-bottom'],
                 },
@@ -344,10 +349,10 @@ const config: Configuration = {
                 {
                     name: 'FBW Ingamepanels Checklist Fix',
                     key: 'checklistfix',
-                    category: '@checklistfix',
+                    category: '@msfsfixes',
                     repoOwner: 'flybywiresim',
                     repoName: 'a32nx',
-                    aircraftName: 'Checklist Fix',
+                    aircraftName: 'MSFS Checklist Fix',
                     titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/dark.svg',
                     titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/light.svg',
                     enabled: true,
