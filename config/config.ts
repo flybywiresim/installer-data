@@ -20,8 +20,8 @@ const config: Configuration = {
                 },
                 {
                     kind: 'addonCategory',
-                    key: 'msfsfixes',
-                    title: 'MSFS Fix',
+                    key: 'other',
+                    title: 'Other',
                 },
                 {
                     kind: 'addonCategory',
@@ -349,18 +349,18 @@ const config: Configuration = {
                 {
                     name: 'FBW Ingamepanels Checklist Fix',
                     key: 'checklistfix',
-                    category: '@msfsfixes',
+                    category: '@other',
                     repoOwner: 'flybywiresim',
                     repoName: 'a32nx',
                     aircraftName: 'MSFS Checklist Fix',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/light.svg',
+                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/checklist-fix/dark.svg',
+                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/checklist-fix/light.svg',
                     enabled: true,
-                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fbw-simbridge/0.png'],
+                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/checklist-fix/checklist-fix-14.png'],
                     backgroundImageShadow: false,
                     shortDescription: 'Checklist Fix',
-                    description: 'This is a fix mod to a bug in the MSFS ingamepanels for checklists. As this mod will impact' +
-                        'all aircraft it has been made as a separate mod so users can uninstall it when issues arise.',
+                    description: 'This mod fixes a bug in the MSFS toolbar panel for checklists. As this mod will impact ' +
+                        'all aircraft in the sim it is provided as an optional separate mod so it can be uninstalled when issues arise.',
                     targetDirectory: 'flybywire-ingamepanels-checklist-fix',
                     tracks: [
                         {
@@ -372,8 +372,8 @@ const config: Configuration = {
                             },
                             url: 'http://flybywirecdn.com/addons/ingamepanels-checklist-fix/master/',
                             isExperimental: false,
-                            description: 'This is a fix mod to a bug in the MSFS ingamepanels for checklists. As this mod will impact' +
-                                'all aircraft it has been made as a separate mod so users can uninstall it when issues arise.',
+                            description: 'This mod fixes a bug in the MSFS toolbar panel for checklists. As this mod will impact ' +
+                                'all aircraft in the sim it is provided as an optional separate mod so it can be uninstalled when issues arise.',
                         },
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
