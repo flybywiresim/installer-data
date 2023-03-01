@@ -485,7 +485,7 @@ const config: Configuration = {
                             releaseModel: {
                                 type: 'CDN',
                             },
-                            description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
+                            description: 'Stable release of the aircraft models, liveries and VMR file.\n This packages is required to see matched models / liveries if you are using FSLTL Injector, MSFS default live traffic or VATSIM.\nA vmr file is provided in the package for VATSIM client use.',
                         },
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
@@ -505,12 +505,23 @@ const config: Configuration = {
                         {
                             name: 'Release',
                             key: 'release',
-                            url: 'https://packages.fslivetrafficliveries.com/injector/',
+                            url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/latest/download/',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'CDN',
                             },
-                            description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on Flightradar24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
+                            description: 'Stable version of the FSLTL Traffic Injector for use on stable versions of MSFS.\nFollow the user guide at https://www.fslivetrafficliveries.com/user-guide/ before use.',
+                        },
+						{
+                            name: 'SU12 Beta Test',
+                            key: 'development',
+                            url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/download/beta/',
+                            isExperimental: true,
+							warningContent: 'No support is offered for this release, it is purely to test changes for the MSFS SU12 Beta',
+                            releaseModel: {
+                                type: 'CDN',
+                            },
+                            description: 'SU12 Beta Release - only use with the SU12 Beta.\nRemoves the taxi sound workaround as SU12 fixes the underlying issue\nEnsures aircraft fly at cruise altitude after SU12 altitude management changes',
                         },
                     ],
                     backgroundService: {
