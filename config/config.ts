@@ -473,19 +473,24 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Base Models',
-                    description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
+                    description: 
+                        'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS.\n\n'+
+                        'Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n\n'+
+                        'This is the base model / livery pack required for FSLTL Injector, MSFS default live traffic or VATSIM use.',
                     targetDirectory: 'fsltl-traffic-base',
                     alternativeNames: [],
                     tracks: [
                         {
-                            name: 'Release',
+                            name: 'Stable',
                             key: 'release',
                             url: 'https://github.com/FSLiveTrafficLiveries/base/releases/latest/download/',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'CDN',
                             },
-                            description: 'Stable release of the aircraft models, liveries and VMR file.\n This packages is required to see matched models / liveries if you are using FSLTL Injector, MSFS default live traffic or VATSIM.\nA vmr file is provided in the package for VATSIM client use.',
+                            description: 'Stable release of the aircraft models, liveries and VMR file.\n\n'+
+                            'This packages is required to see matched models / liveries if you are using FSLTL Injector, MSFS default live traffic or VATSIM.\n\n'+
+                            'A vmr file is provided in the package for VATSIM client use.',
                         },
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
@@ -499,29 +504,35 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Injector Software',
-                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n* Live IFR and VFR traffic based on Flightradar24\n* Parked aircraft based on historic real data for immersive full airports\n* Ability to have any combination of IFR, VFR and parked aircraft',
+                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n'+
+                    '- Live IFR and VFR traffic based on Flightradar24\n\n'+
+                    '- Parked aircraft based on historic real data for immersive full airports\n\n'+
+                    '- Ability to have any combination of IFR, VFR and parked aircraft',
                     targetDirectory: 'fsltl-traffic-injector',
                     tracks: [
                         {
-                            name: 'Release',
+                            name: 'Stable',
                             key: 'release',
                             url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/latest/download/',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'CDN',
                             },
-                            description: 'Stable version of the FSLTL Traffic Injector for use on stable versions of MSFS.\nFollow the user guide at https://www.fslivetrafficliveries.com/user-guide/ before use.',
+                            description: 'Stable version of the FSLTL Traffic Injector for use on stable versions of MSFS.\n\n'+
+                            'Follow the user guide at https://www.fslivetrafficliveries.com/user-guide/ before use.',
                         },
 						{
-                            name: 'SU12 Beta Test',
+                            name: 'Experimental',
                             key: 'development',
                             url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/download/beta/',
                             isExperimental: true,
-							warningContent: 'No support is offered for this release, it is purely to test changes for the MSFS SU12 Beta',
+							warningContent: 'No support is offered for this release, it is a preview of features that may be included in future releases.',
                             releaseModel: {
                                 type: 'CDN',
                             },
-                            description: 'SU12 Beta Release - only use with the SU12 Beta.\nRemoves the taxi sound workaround as SU12 fixes the underlying issue\nEnsures aircraft fly at cruise altitude after SU12 altitude management changes',
+                            description: 'Experimental Release that includes features that are not yet ready for stable release.\n\n'+
+                            'You can provide feedback on these new features in the FSLTL Discord.\n\n'+
+                            'No support is offered for issues with this release, new FSLTL users should use stable.'
                         },
                     ],
                     backgroundService: {
@@ -543,6 +554,16 @@ const config: Configuration = {
                     action: 'openBrowser',
                     url: 'https://discord.gg/suMR56wCrn',
                     inline: true,
+                },
+                {
+                    text: 'User Guide',
+                    action: 'openBrowser',
+                    url: 'https://www.fslivetrafficliveries.com/user-guide/',
+                },
+                {
+                    text: 'Support FAQ',
+                    action: 'openBrowser',
+                    url: 'https://www.fslivetrafficliveries.com/support-faq/',
                 },
             ],
         },
