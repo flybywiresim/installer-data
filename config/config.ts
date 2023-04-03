@@ -526,7 +526,7 @@ const config: Configuration = {
                             key: 'development',
                             url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/download/beta/',
                             isExperimental: true,
-							warningContent: 'No support is offered for this release, it is a preview of features that may be included in future releases.',
+                            warningContent: 'No support is offered for this release, it is a preview of features that may be included in future releases.',
                             releaseModel: {
                                 type: 'CDN',
                             },
