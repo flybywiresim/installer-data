@@ -102,7 +102,7 @@ const config: Configuration = {
                         {
                             name: 'Development',
                             key: 'a32nx-dev',
-                            url: 'https://flybywirecdn.com/addons/a32nx/master',
+                            url: 'https://flybywirecdn.com/addons/a32nx/master-newrepo',
                             alternativeUrls: [
                                 'external/a32nx/master',
                                 // move old experimental users over to dev
@@ -143,6 +143,22 @@ const config: Configuration = {
                             releaseModel: {
                                 type: 'githubBranch',
                                 branch: 'experimental',
+                            },
+
+                        },
+                        {
+                            name: 'Repo-Refactor',
+                            key: 'a32nx-newrepo',
+                            url: 'https://flybywirecdn.com/addons/a32nx/repo-refactor',
+                            alternativeUrls: [
+                            ],
+                            description: 'This is a test version of the A32NX based on the master branch and built with ' +
+                                'the new refactored repo structure. This requires extensive testing and feedback. Please ' +
+                                'report any issues in this PR: https://github.com/flybywiresim/a32nx/pull/7677',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'githubBranch',
+                                branch: 'repo-refactor',
                             },
                         },
                     ],
