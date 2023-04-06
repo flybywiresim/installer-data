@@ -623,9 +623,9 @@ const config: Configuration = {
             logoUrl: 'https://raw.githubusercontent.com/lancard/fly-by-wire-config/main/icon.svg',
             defs: [
                 {
-                    'kind: 'addonCategory',
-                    'key: 'scenery',
-                    'title: 'Scenery',
+                    kind: 'addonCategory',
+                    key: 'scenery',
+                    title: 'Scenery',
                 },
             ],
             addons: [
@@ -653,8 +653,8 @@ const config: Configuration = {
                             description: 'Stable is our variant that has the least bugs and best performance.',
                             isExperimental: false,
                             releaseModel: {
-                                'type: 'githubBranch',
-                                'branch: 'master',
+                                type: 'githubBranch',
+                                branch: 'master',
                             },
                         },
                     ],
