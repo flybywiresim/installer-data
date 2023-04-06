@@ -618,55 +618,55 @@ const config: Configuration = {
             ],
         },
         {
-            "name": "The Koreans",
-            "key": "thekoreans",
-            "logoUrl": "https://raw.githubusercontent.com/lancard/fly-by-wire-config/main/icon.svg",
-            "defs": [
+            name: 'The Koreans',
+            key: 'thekoreans',
+            logoUrl: 'https://raw.githubusercontent.com/lancard/fly-by-wire-config/main/icon.svg',
+            defs: [
                 {
-                    "kind": "addonCategory",
-                    "key": "scenery",
-                    "title": "Scenery"
-                }
+                    'kind: 'addonCategory',
+                    'key: 'scenery',
+                    'title: 'Scenery',
+                },
             ],
-            "addons": [
+            addons: [
                 {
-                    "name": "RKJY",
-                    "key": "RKJY",
-                    "repoOwner": "lancard",
-                    "repoName": "fs2020-RKJY",
-                    "category": "@scenery",
-                    "aircraftName": "Yeosu airport",
-                    "enabled": true,
-                    "backgroundImageUrls": [
-                        "https://lancard.github.io/fs2020-RKJY/screenshot.png"
+                    name: 'RKJY',
+                    key: 'RKJY',
+                    repoOwner: 'lancard',
+                    repoName: 'fs2020-RKJY',
+                    category: '@scenery',
+                    aircraftName: 'Yeosu airport',
+                    enabled: true,
+                    backgroundImageUrls: [
+                        'https://lancard.github.io/fs2020-RKJY/screenshot.png',
                     ],
-                    "titleImageUrl": "https://lancard.github.io/fs2020-RKJY/dark.svg",
-                    "titleImageUrlSelected": "https://lancard.github.io/fs2020-RKJY/light.svg",
-                    "shortDescription": "Yeosu airport",
-                    "description": "RKJY - Yeosu airport. source on https://github.com/lancard",
-                    "targetDirectory": "fs2020-RKJY",
-                    "tracks": [
+                    titleImageUrl: 'https://lancard.github.io/fs2020-RKJY/dark.svg',
+                    titleImageUrlSelected: 'https://lancard.github.io/fs2020-RKJY/light.svg',
+                    shortDescription: 'Yeosu airport',
+                    description: 'RKJY - Yeosu airport. source on https://github.com/lancard',
+                    targetDirectory: 'fs2020-RKJY',
+                    tracks: [
                         {
-                            "name": "Stable",
-                            "key": "production",
-                            "url": "https://github.com/lancard/fs2020-RKJY/releases/download/production/",
-                            "description": "Stable is our variant that has the least bugs and best performance.",
-                            "isExperimental": false,
-                            "releaseModel": {
-                                "type": "githubBranch",
-                                "branch": "master"
-                            }
-                        }
-                    ]
-                }
+                            name: 'Stable',
+                            key: 'production',
+                            url: 'https://github.com/lancard/fs2020-RKJY/releases/download/production/',
+                            description: 'Stable is our variant that has the least bugs and best performance.',
+                            isExperimental: false,
+                            releaseModel: {
+                                'type: 'githubBranch',
+                                'branch: 'master',
+                            },
+                        },
+                    ],
+                },
             ],
-            "buttons": [
+            buttons: [
                 {
-                    "text": "Github",
-                    "action": "openBrowser",
-                    "url": "https://github.com/lancard"
-                }
-            ]
+                    text: 'Github',
+                    action: 'openBrowser',
+                    url: 'https://github.com/lancard',
+                },
+            ],
         },
     ],
 };
