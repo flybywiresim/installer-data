@@ -215,7 +215,22 @@ const config: Configuration = {
                             creator: "swingbird",
                             // packageVersion: '<0.1.2', (the mod does provide accurate version info in manifest.json)
                             description: "It is recommended to remove this add-on before installing and using the A32NX. It is known known to override A32NX files and to break the A32NX.",
-                        }
+                        },
+                        {
+                            title: "z-Newlight-settinglight-FBW-A320NX-dev",
+                            creator: "Nicottine",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: "z-Newlight-settinglight-FBW-A320NX-stable",
+                            creator: "Nicottine",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: "z-Newlight-settinglight-FBW-A320NX-EXP",
+                            creator: "Nicottine",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
                     ],
                     myInstallPage: {
                         links: [
