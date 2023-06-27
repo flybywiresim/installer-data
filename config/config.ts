@@ -104,11 +104,14 @@ const config: Configuration = {
                             key: 'a32nx-dev',
                             url: 'https://flybywirecdn.com/addons/a32nx/master',
                             alternativeUrls: [
+                                // move old experimental users over to dev
+                                'https://cdn.flybywiresim.com/addons/a32nx/cfbw-cap',
+                                'https://cdn.flybywiresim.com/addons/a32nx/cfbw',
                                 'external/a32nx/master',
                                 // move bunnycdn users to cloudflare
                                 'https://cdn.flybywiresim.com/addons/a32nx/master',
-				                // move exp users to dev
-				                'https://flybywirecdn.com/addons/a32nx/experimental',
+                                // move exp users to dev
+                                'https://flybywirecdn.com/addons/a32nx/experimental',
                                 'external/a32nx/experimental',
                                 'https://cdn.flybywiresim.com/addons/a32nx/experimental',
                                 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
