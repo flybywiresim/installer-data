@@ -104,12 +104,17 @@ const config: Configuration = {
                             key: 'a32nx-dev',
                             url: 'https://flybywirecdn.com/addons/a32nx/master',
                             alternativeUrls: [
-                                'external/a32nx/master',
                                 // move old experimental users over to dev
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw-cap',
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw',
+                                'external/a32nx/master',
                                 // move bunnycdn users to cloudflare
                                 'https://cdn.flybywiresim.com/addons/a32nx/master',
+                                // move exp users to dev
+                                'https://flybywirecdn.com/addons/a32nx/experimental',
+                                'external/a32nx/experimental',
+                                'https://cdn.flybywiresim.com/addons/a32nx/experimental',
+                                'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Bugs are to be expected. It updates whenever something is added to the \'master\' ' +
@@ -118,31 +123,6 @@ const config: Configuration = {
                             releaseModel: {
                                 type: 'githubBranch',
                                 branch: 'master',
-                            },
-                        },
-                        {
-                            name: 'Experimental',
-                            key: 'experimental',
-                            url: 'https://flybywirecdn.com/addons/a32nx/experimental',
-                            alternativeUrls: [
-                                'external/a32nx/experimental',
-                                'https://cdn.flybywiresim.com/addons/a32nx/experimental',
-                                'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
-                            ],
-                            description: 'This version is similar to the Development version, ' +
-                                'but contains features that we wish to test publicly as we perfect them. ' +
-                                'The build is in practice stable most of the time, but you may encounter flight-breaking bugs, ' +
-                                'performance loss, crashes or other issues as the features present in this version are not completely finished. ' +
-                                'Not advised for flying on online networks.',
-                            isExperimental: true,
-                            warningContent: 'The experimental version contains custom systems that more closely matches ' +
-                                'real-life behaviour of an A320neo. Those are in development and bugs are to be expected.\n\n' +
-                                'To understand what you are getting into and the potential issues you might experience, ' +
-                                'please read [this guide](https://docs.flybywiresim.com/fbw-a32nx/support/exp/).\n\n' +
-                                '**Please be aware that no support will be offered via Discord support channels.**',
-                            releaseModel: {
-                                type: 'githubBranch',
-                                branch: 'experimental',
                             },
                         },
                     ],
