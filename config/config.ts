@@ -211,6 +211,11 @@ const config: Configuration = {
                             creator: "Nicottine",
                             description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
                         },
+                        {
+                            title: "FBW A32NX Weather Radar Mod",
+                            creator: "",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components may render the A32NX unusable."
+                        }
                     ],
                     myInstallPage: {
                         links: [
