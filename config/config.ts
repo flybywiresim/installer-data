@@ -215,6 +215,11 @@ const config: Configuration = {
                             title: "FBW A32NX Weather Radar Mod",
                             creator: "",
                             description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and may render the A32NX unusable."
+                        },
+                        {
+                            title: "China Eastern",
+                            creator: "JasonC68",
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX."
                         }
                     ],
                     myInstallPage: {
@@ -473,7 +478,7 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Base Models',
-                    description: 
+                    description:
                         'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS.\n\n'+
                         'Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n\n'+
                         'This is the base model / livery pack required for FSLTL Injector, MSFS default live traffic or VATSIM use.',
