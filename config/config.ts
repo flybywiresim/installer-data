@@ -242,7 +242,7 @@ const config: Configuration = {
                     repoOwner: 'flybywiresim',
                     repoName: 'aircraft',
                     category: '@aircraft',
-                    aircraftName: 'A380-841',
+                    aircraftName: 'A380-842',
                     titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/dark.svg',
                     titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/light.svg',
                     enabled: false,
