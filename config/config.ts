@@ -567,56 +567,6 @@ const config: Configuration = {
                 },
             ],
         },
-        {
-            name: 'Synaptic Simulations',
-            key: 'synaptic',
-            logoUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/publisher-icons/synaptic/0.png',
-            defs: [
-                {
-                    kind: 'addonCategory',
-                    key: 'aircraft',
-                    title: 'Aircraft',
-                },
-            ],
-            addons: [
-                {
-                    name: 'A22X',
-                    repoOwner: 'Synaptic-Simulations',
-                    repoName: 'a22x',
-                    category: '@aircraft',
-                    aircraftName: 'A220-300',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/synaptic-a22x/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/synaptic-a22x/light.svg',
-                    key: 'A22X',
-                    enabled: false,
-                    backgroundImageUrls: ['https://nyc3.digitaloceanspaces.com/fselite/2020/11/123263426_126778999193686_7966913238295950901_o.png'],
-                    shortDescription: 'Airbus A220-300 (CSeries 300)',
-                    description: '',
-                    targetDirectory: 'A22X',
-                    alternativeNames: [],
-                    tracks: [],
-                },
-            ],
-            buttons: [
-                {
-                    text: 'Website',
-                    action: 'openBrowser',
-                    url: 'https://www.synapticsim.com/',
-                },
-                {
-                    text: 'Discord',
-                    action: 'openBrowser',
-                    url: 'https://discord.gg/acQkSvrePG',
-                },
-                {
-                    text: 'Twitter',
-                    action: 'openBrowser',
-                    url: 'https://twitter.com/synapticsim',
-                    inline: true,
-
-                },
-            ],
-        },
     ],
 };
 
