@@ -139,7 +139,7 @@ const config: Configuration = {
                         // packageVersion syntax follows: https://www.npmjs.com/package/semver
                         // description: a short description of why the addon is incompatible
                         {
-                            title: 'FlightFlow | IMPROVED TEXTURES MOD - [A32NX]',
+                            title: 'FlightFlow | IMPROVED TEXTURES MOD',
                             creator: 'FlightFlow Team',
                             description: "It is recommended to remove this add-on/mod before installing and using the A32NX. This add-on/mod is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
                         },
@@ -473,7 +473,7 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Base Models',
-                    description: 
+                    description:
                         'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS.\n\n'+
                         'Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n\n'+
                         'This is the base model / livery pack required for FSLTL Injector, MSFS default live traffic or VATSIM use.',
