@@ -140,7 +140,7 @@ const config: Configuration = {
                         // description: a short description of why the addon is incompatible
                         {
                             title: 'FlightFlow | IMPROVED TEXTURES MOD',
-                            creator: 'FlightFlow Team',
+                            creator: 'FlightFlow',
                             description: "It is recommended to remove this add-on/mod before installing and using the A32NX. This add-on/mod is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
                         },
                         {
