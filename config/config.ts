@@ -254,7 +254,11 @@ const config: Configuration = {
                     backgroundImageUrls: ['https://nyc3.digitaloceanspaces.com/fselite/2020/11/123263426_126778999193686_7966913238295950901_o.png'],
                     shortDescription: 'Airbus A380-800',
                     description: '',
-                    targetDirectory: 'A380',
+                    targetDirectory: 'flybywire-aircraft-a380x-842',
+                    alternativeNames: [
+                        'A380X',
+                        'a380x',
+                    ],
                     tracks: [
                         {
                             name: 'A380X QA Partial Build',
