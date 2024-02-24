@@ -255,7 +255,23 @@ const config: Configuration = {
                     shortDescription: 'Airbus A380-800',
                     description: '',
                     targetDirectory: 'A380',
-                    tracks: [],
+                    tracks: [
+                        {
+                            name: 'A380X QA Partial Build',
+                            key: 'a380x-exp',
+                            url: 'https://flybywirecdn.com/addons/a380x/a380x-experimental',
+                            alternativeUrls: [],
+                            isExperimental: true,
+                            description: 'Development will have the latest features that will end up in the next stable. ' +
+                                'Bugs are to be expected. It updates whenever something is added to the \'master\' ' +
+                                'branch on Github. Please visit our discord for support.',
+                            warningContent: 'This download only contain the public part of the A380X and is not sufficient to get the full A380X QA build.**',
+                            releaseModel: {
+                                type: 'githubBranch',
+                                branch: 'a380x-experimental',
+                            }
+                        },
+                    ],
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
                 {
