@@ -250,7 +250,7 @@ const config: Configuration = {
                     aircraftName: 'A380-842',
                     titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/dark.svg',
                     titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/light.svg',
-                    enabled: false,
+                    enabled: true,
                     backgroundImageUrls: ['https://nyc3.digitaloceanspaces.com/fselite/2020/11/123263426_126778999193686_7966913238295950901_o.png'],
                     shortDescription: 'Airbus A380-800',
                     description: '',
