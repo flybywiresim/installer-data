@@ -293,10 +293,12 @@ const config: Configuration = {
                             url: 'https://flybywirecdn.com/addons/a380x/a380x-experimental',
                             alternativeUrls: [],
                             isExperimental: true,
-                            description: '',
-                            warningContent: 'This download only contain the public part of the A380X and is not ' +
-                                'sufficient to get the full A380X QA build. You need to have access to the private ' +
-                                'repository to get the full A380X QA build.',
+                            description: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
+                            warningContent: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
                             releaseModel: {
                                 type: 'githubBranch',
                                 branch: 'a380x-experimental',
