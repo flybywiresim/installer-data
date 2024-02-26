@@ -125,6 +125,23 @@ const config: Configuration = {
                                 branch: 'master',
                             },
                         },
+                        {
+                            name: 'fms-v2',
+                            key: 'fms-v2',
+                            url: 'https://flybywirecdn.com/addons/a32nx/fms-v2',
+                            alternativeUrls: [],
+                            description: 'fms-v2 QA upload',
+                            isExperimental: true,
+                            warningContent: 'The experimental version contains custom systems that more closely matches ' +
+                                'real-life behaviour of an A320neo. Those are in development and bugs are to be expected.\n\n' +
+                                'To understand what you are getting into and the potential issues you might experience, ' +
+                                'please read [this guide](https://docs.flybywiresim.com/fbw-a32nx/support/exp/).\n\n' +
+                                '**Please be aware that no support will be offered via Discord support channels.**',
+                            releaseModel: {
+                                type: 'githubBranch',
+                                branch: 'fms-v2',
+                            },
+                        },
                     ],
                     dependencies: [
                         {
@@ -251,9 +268,19 @@ const config: Configuration = {
                     titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/dark.svg',
                     titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/light.svg',
                     enabled: true,
-                    backgroundImageUrls: ['https://nyc3.digitaloceanspaces.com/fselite/2020/11/123263426_126778999193686_7966913238295950901_o.png'],
+                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fbw-a380x/a380x-s.png'],
                     shortDescription: 'Airbus A380-800',
                     description: '',
+                    techSpecs: [
+                        {
+                            name: 'Engines',
+                            value: 'RR Trent 972B-84',
+                        },
+                        {
+                            name: 'APU',
+                            value: 'PW980',
+                        },
+                    ],
                     targetDirectory: 'flybywire-aircraft-a380-842',
                     alternativeNames: [
                         'A380X',
@@ -266,14 +293,21 @@ const config: Configuration = {
                             url: 'https://flybywirecdn.com/addons/a380x/a380x-experimental',
                             alternativeUrls: [],
                             isExperimental: true,
-                            description: 'Development will have the latest features that will end up in the next stable. ' +
-                                'Bugs are to be expected. It updates whenever something is added to the \'master\' ' +
-                                'branch on Github. Please visit our discord for support.',
-                            warningContent: 'This download only contain the public part of the A380X and is not sufficient to get the full A380X QA build.**',
+                            description: '',
+                            warningContent: 'This download only contain the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to have access to the private ' +
+                                'repository to get the full A380X QA build.',
                             releaseModel: {
                                 type: 'githubBranch',
                                 branch: 'a380x-experimental',
                             }
+                        },
+                    ],
+                    dependencies: [
+                        {
+                            addon: '@flybywiresim/A32NX',
+                            optional: true,
+                            modalText: 'SimBridge allows the A32NX to expose remote tools like the Web MCDU, as well as use the external terrain database.',
                         },
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
