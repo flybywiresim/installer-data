@@ -250,12 +250,68 @@ const config: Configuration = {
                     aircraftName: 'A380-842',
                     titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/dark.svg',
                     titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/light.svg',
-                    enabled: false,
-                    backgroundImageUrls: ['https://nyc3.digitaloceanspaces.com/fselite/2020/11/123263426_126778999193686_7966913238295950901_o.png'],
+                    enabled: true,
+                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fbw-a380x/a380x.png'],
                     shortDescription: 'Airbus A380-800',
                     description: '',
-                    targetDirectory: 'A380',
-                    tracks: [],
+                    techSpecs: [
+                        {
+                            name: 'Engines',
+                            value: 'RR Trent 972B-84',
+                        },
+                        {
+                            name: 'APU',
+                            value: 'PW980',
+                        },
+                    ],
+                    targetDirectory: 'flybywire-aircraft-a380-842',
+                    alternativeNames: [
+                        'A380X',
+                        'a380x',
+                    ],
+                    tracks: [
+			{
+                            name: 'Master - A380X QA Partial Build',
+                            key: 'a380x-master',
+                            url: 'https://flybywirecdn.com/addons/a380x/master',
+                            alternativeUrls: [],
+                            isExperimental: false,
+                            description: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
+                            warningContent: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
+                            releaseModel: {
+                                type: 'githubBranch',
+                                branch: 'master',
+                            }
+                        },
+                        {
+                            name: 'Exp - A380X QA Partial Build',
+                            key: 'a380x-exp',
+                            url: 'https://flybywirecdn.com/addons/a380x/a380x-experimental',
+                            alternativeUrls: [],
+                            isExperimental: true,
+                            description: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
+                            warningContent: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
+                            releaseModel: {
+                                type: 'githubBranch',
+                                branch: 'a380x-experimental',
+                            }
+                        },
+                    ],
+                    dependencies: [
+                        {
+                            addon: '@flybywiresim/A32NX',
+                            optional: true,
+                            modalText: 'SimBridge allows the A32NX to expose remote tools like the Web MCDU, as well as use the external terrain database.',
+                        },
+                    ],
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
                 {
