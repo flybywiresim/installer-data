@@ -287,8 +287,25 @@ const config: Configuration = {
                         'a380x',
                     ],
                     tracks: [
+			{
+                            name: 'Master - A380X QA Partial Build',
+                            key: 'a380x-master',
+                            url: 'https://flybywirecdn.com/addons/a380x/master',
+                            alternativeUrls: [],
+                            isExperimental: false,
+                            description: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
+                            warningContent: 'This download only contains the public part of the A380X and is not ' +
+                                'sufficient to get the full A380X QA build. You need to also install the ' +
+                                'private second package with the model/texture and sounds.',
+                            releaseModel: {
+                                type: 'githubBranch',
+                                branch: 'master',
+                            }
+                        },
                         {
-                            name: 'A380X QA Partial Build',
+                            name: 'Exp - A380X QA Partial Build',
                             key: 'a380x-exp',
                             url: 'https://flybywirecdn.com/addons/a380x/a380x-experimental',
                             alternativeUrls: [],
