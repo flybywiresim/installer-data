@@ -6,7 +6,7 @@ const config: Configuration = {
         {
             name: 'FlyByWire Simulations',
             key: 'flybywiresim',
-            logoUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/publisher-icons/flybywiresim/0.svg',
+            logoUrl: 'https://flybywirecdn.com/installer/media-assets/publisher-icons/flybywiresim/0.svg',
             defs: [
                 {
                     kind: 'addonCategory',
@@ -55,11 +55,11 @@ const config: Configuration = {
                     repoName: 'aircraft',
                     category: '@aircraft',
                     aircraftName: 'A320-251N',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a32nx/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a32nx/light.svg',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a32nx/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a32nx/light.svg',
                     enabled: true,
                     // TODO: Change this
-                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fbw-a32nx/1.png'],
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-a32nx/1.png'],
                     shortDescription: 'Airbus A320neo Series',
                     description: 'The A320neo (new engine option) is one of many upgrades introduced by Airbus to help maintain ' +
                         'its A320 product line’s position as the world’s most advanced and fuel-efficient single-aisle ' +
@@ -248,10 +248,10 @@ const config: Configuration = {
                     repoName: 'aircraft',
                     category: '@aircraft',
                     aircraftName: 'A380-842',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-a380x/light.svg',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a380x/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a380x/light.svg',
                     enabled: false,
-                    backgroundImageUrls: ['https://nyc3.digitaloceanspaces.com/fselite/2020/11/123263426_126778999193686_7966913238295950901_o.png'],
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-a380x/a380x.png'],
                     shortDescription: 'Airbus A380-800',
                     description: '',
                     targetDirectory: 'A380',
@@ -265,9 +265,9 @@ const config: Configuration = {
                     aircraftName: 'FBW Headquarters',
                     enabled: true,
                     overrideAddonWhileHidden: 'A380X',
-                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fbw-kfbw/0.png'],
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-kfbw/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-kfbw/light.svg',
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-kfbw/0.png'],
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-kfbw/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-kfbw/light.svg',
                     shortDescription: 'FlyByWire Headquarters',
                     description: 'Welcome to KFBW! \n\n' +
                         'This is a showcase of the A380 project. Spawn at KFBW or fly there! The nearest airport is KTNP (Twenty-Nine Palms, California, USA). ' +
@@ -281,7 +281,11 @@ const config: Configuration = {
                         {
                             name: 'Release',
                             key: 'kfbw-release',
-                            url: 'https://cdn.flybywiresim.com/addons/kfbw/release/',
+                            url: 'https://flybywirecdn.com/addons/kfbw/release/',
+                            alternativeUrls: [
+                                // move Bunny CDN users to Cloudflare
+                                'https://cdn.flybywiresim.com/addons/kfbw/release/',
+                            ],
                             isExperimental: false,
                             releaseModel: {
                                 type: 'CDN',
@@ -297,10 +301,10 @@ const config: Configuration = {
                     repoOwner: 'flybywiresim',
                     repoName: 'simbridge',
                     aircraftName: 'FBW SimBridge',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fbw-simbridge/light.svg',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-simbridge/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-simbridge/light.svg',
                     enabled: true,
-                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fbw-simbridge/0.png'],
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-simbridge/0.png'],
                     backgroundImageShadow: false,
                     shortDescription: 'Airbus A380-800',
                     description: 'SimBridge is an external application which allows FBW aircraft to communicate with components located outside the simulator. SimBridge will be used for a number of features requiring external data (such as TAWS terrain display), as well as for functionality providing remote access to aircraft systems or data.',
@@ -312,7 +316,11 @@ const config: Configuration = {
                             releaseModel: {
                                 type: 'githubRelease',
                             },
-                            url: 'https://cdn.flybywiresim.com/addons/simbridge/release/',
+                            url: 'https://flybywirecdn.com/addons/simbridge/release/',
+                            alternativeUrls: [
+                                // move Bunny CDN users to Cloudflare
+                                'https://cdn.flybywiresim.com/addons/simbridge/release/',
+                            ],
                             isExperimental: false,
                             description: 'SimBridge is an external app that enables FlyByWire Simulations aircraft to communicate outside your simulator. From remote displays to external terrain display rendering, it is used for a variety of optional features.',
                         },
@@ -369,7 +377,7 @@ const config: Configuration = {
         {
             name: 'Salty Simulations',
             key: 'salty',
-            logoUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/publisher-icons/salty/0.svg',
+            logoUrl: 'https://flybywirecdn.com/installer/media-assets/publisher-icons/salty/0.svg',
             defs: [
                 {
                     kind: 'addonCategory',
@@ -385,8 +393,8 @@ const config: Configuration = {
                     repoName: 'salty-747',
                     category: '@aircraft',
                     aircraftName: 'B747-8I',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/salty-74S/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/salty-74S/light.svg',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/salty-74S/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/salty-74S/light.svg',
                     enabled: true,
                     backgroundImageUrls: ['https://raw.githubusercontent.com/saltysimulations/branding/main/png/salty_banner.png'],
                     shortDescription: 'Boeing 747-8I',
@@ -448,7 +456,7 @@ const config: Configuration = {
         {
             name: 'FSLTL',
             key: 'fsltl',
-            logoUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/publisher-icons/fsltl/fsltl-test-2.png',
+            logoUrl: 'https://flybywirecdn.com/installer/media-assets/publisher-icons/fsltl/0.png',
             logoSize: 36,
             defs: [
                 {
@@ -473,10 +481,10 @@ const config: Configuration = {
                     key: 'traffic-base-models',
                     name: 'FSLTL Traffic',
                     aircraftName: 'FSLTL Traffic',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/base-models/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/base-models/light.svg',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/base-models/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/base-models/light.svg',
                     enabled: true,
-                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Base Models',
                     description:
                         'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS.\n\n'+
@@ -504,10 +512,10 @@ const config: Configuration = {
                     key: 'traffic-injector',
                     name: 'FSLTL Injector',
                     aircraftName: 'FSLTL Traffic',
-                    titleImageUrl: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/injector/dark.svg',
-                    titleImageUrlSelected: 'https://flybywiresim.b-cdn.net/installer/media-assets/addon-titles/fsltl/injector/light.svg',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/light.svg',
                     enabled: true,
-                    backgroundImageUrls: ['https://flybywiresim.b-cdn.net/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Injector Software',
                     description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n'+
                     '- Live IFR and VFR traffic based on Flightradar24\n\n'+
