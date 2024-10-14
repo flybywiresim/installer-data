@@ -346,13 +346,6 @@ const config: Configuration = {
                                 },
                                 title: 'Resources',
                             },
-                            {
-                                location: {
-                                  in: 'package',
-                                  path: 'resources',
-                                },
-                                title: 'Resources (legacy)',
-                              },
                         ],
                     },
                 },
