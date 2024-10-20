@@ -274,7 +274,9 @@ const config: Configuration = {
                             name: 'Master - A380X QA Partial Build',
                             key: 'a380x-master',
                             url: 'https://flybywirecdn.com/addons/a380x/master',
-                            alternativeUrls: [],
+                            alternativeUrls: [
+                                'https://flybywirecdn.com/addons/a380x/a380x-experimental',
+			    ],
                             isExperimental: false,
                             description: 'This download only contains the public part of the A380X and is not ' +
                                 'sufficient to get the full A380X QA build. You need to also install the ' +
