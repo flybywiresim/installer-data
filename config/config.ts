@@ -287,30 +287,6 @@ const config: Configuration = {
                                 branch: 'master',
                             }
                         },
-                        {
-                            name: 'Exp - A380X QA Partial Build',
-                            key: 'a380x-exp',
-                            url: 'https://flybywirecdn.com/addons/a380x/a380x-experimental',
-                            alternativeUrls: [],
-                            isExperimental: true,
-                            description: 'This download only contains the public part of the A380X and is not ' +
-                                'sufficient to get the full A380X QA build. You need to also install the ' +
-                                'private second package with the model/texture and sounds.',
-                            warningContent: 'This download only contains the public part of the A380X and is not ' +
-                                'sufficient to get the full A380X QA build. You need to also install the ' +
-                                'private second package with the model/texture and sounds.',
-                            releaseModel: {
-                                type: 'githubBranch',
-                                branch: 'a380x-experimental',
-                            }
-                        },
-                    ],
-                    dependencies: [
-                        {
-                            addon: '@flybywiresim/A32NX',
-                            optional: true,
-                            modalText: 'SimBridge allows the A32NX to expose remote tools like the Web MCDU, as well as use the external terrain database.',
-                        },
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
