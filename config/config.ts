@@ -307,7 +307,7 @@ const config: Configuration = {
                     backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-simbridge/0.png'],
                     backgroundImageShadow: false,
                     shortDescription: 'Airbus A380-800',
-                    description: `<b><span style="color: rgb(255, 106, 0);">&#9888; Note: Starting with version 0.6.0 custom resources like PDF Charts and Company Routes need to be located inside the Documents folder. Please refer to the documentation and use the provided links in the "About" section to backup your files.</span></b> \n\n SimBridge is an external app that enables FlyByWire Simulations aircraft to communicate outside your simulator. From remote displays to external terrain display rendering, it is used for a variety of optional features.`,                    
+                    description: `<b><span style="color: rgb(255, 106, 0);">&#9888; Note: Starting with version 0.6.0 custom resources like PDF Charts and Company Routes need to be located inside the Documents folder (Usually \`C:\\Users\\<Username>\\Documents\\FlyByWireSim\\Simbridge\\resources\`). Please make sure to backup your files before updating. Once updated, you can also use the "Resources" button in the "About" section of the installer to find the new location.</span></b> \n\n SimBridge is an external app that enables FlyByWire Simulations aircraft to communicate outside your simulator. From remote displays to external terrain display rendering, it is used for a variety of optional features.`,
                     targetDirectory: 'flybywire-externaltools-simbridge',
                     tracks: [
                         {
@@ -322,7 +322,7 @@ const config: Configuration = {
                                 'https://cdn.flybywiresim.com/addons/simbridge/release/',
                             ],
                             isExperimental: false,
-                            description: `<b><span style="color: rgb(255, 106, 0);">&#9888; Note: Starting with version 0.6.0 custom resources like PDF Charts and Company Routes need to be located inside the Documents folder (Usually \`C:\\Users\\<Username>\\Documents\`). Please make sure to backup the files before updating. Once updated, you can use the "Resources" button in the "About" section of the installer to find the new location.</span></b> \n\n SimBridge is an external app that enables FlyByWire Simulations aircraft to communicate outside your simulator. From remote displays to external terrain display rendering, it is used for a variety of optional features.`,
+                            description: `<b><span style="color: rgb(255, 106, 0);">&#9888; Note: Starting with version 0.6.0 custom resources like PDF Charts and Company Routes need to be located inside the Documents folder (Usually \`C:\\Users\\<Username>\\Documents\\FlyByWireSim\\Simbridge\\resources\`). Please make sure to backup your files before updating. Once updated, you can also use the "Resources" button in the "About" section of the installer to find the new location.</span></b> \n\n SimBridge is an external app that enables FlyByWire Simulations aircraft to communicate outside your simulator. From remote displays to external terrain display rendering, it is used for a variety of optional features.`,
                         },
                     ],
                     disallowedRunningExternalApps: ['@/simbridge-app'],
