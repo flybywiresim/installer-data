@@ -505,6 +505,16 @@ const config: Configuration = {
                             'This packages is required to see matched models / liveries if you are using FSLTL Injector, MSFS default live traffic or VATSIM.\n\n'+
                             'A vmr file is provided in the package for VATSIM client use.',
                         },
+                        {
+                            name: 'Development',
+                            key: 'dev',
+                            url: 'https://github.com/FSLiveTrafficLiveries/base/releases/download/1.1.0-alpha/',
+                            isExperimental: true,
+                            releaseModel: {
+                                type: 'CDN',
+                            },
+                            description: 'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS. Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n',
+                        },
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
