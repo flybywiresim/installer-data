@@ -528,19 +528,19 @@ const config: Configuration = {
                             url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/latest/download/',
                             isExperimental: false,
                             releaseModel: {
-                                type: 'CDN',
+                                type: 'fragmenter',
                             },
                             description: 'Stable version of the FSLTL Traffic Injector for use on stable versions of MSFS.\n\n'+
                             'Follow the user guide at https://www.fslivetrafficliveries.com/user-guide/ before use.',
                         },
-						{
+				            		{
                             name: 'Experimental',
                             key: 'development',
                             url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/download/beta/',
                             isExperimental: true,
                             warningContent: 'No support is offered for this release, it is a preview of features that may be included in future releases.',
                             releaseModel: {
-                                type: 'CDN',
+                                type: 'fragmenter',
                             },
                             description: 'Experimental Release that includes features that are not yet ready for stable release.\n\n'+
                             'You can provide feedback on these new features in the FSLTL Discord.\n\n'+
