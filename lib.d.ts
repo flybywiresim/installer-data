@@ -14,26 +14,27 @@ export interface NamedDirectoryDefinition extends DirectoryDefinition {
     title: string,
 }
 
-export type AddonVersion = {
-    title: string,
-    date: Date,
-    type: 'major' | 'minor' | 'patch'
+export type FragmenterReleaseModel = {
+    type: 'fragmenter',
 }
 
 export type GithubReleaseReleaseModel = {
+    /** @deprecated */
     type: 'githubRelease',
 }
 
 export type GithubBranchReleaseModel = {
+    /** @deprecated */
     type: 'githubBranch',
     branch: string,
 }
 
 export type CDNReleaseModel = {
+    /** @deprecated */
     type: 'CDN',
 }
 
-export type ReleaseModel = GithubReleaseReleaseModel | GithubBranchReleaseModel | CDNReleaseModel
+export type ReleaseModel = FragmenterReleaseModel | GithubReleaseReleaseModel | GithubBranchReleaseModel | CDNReleaseModel
 
 type BaseAddonTrack = {
     name: string,
@@ -151,28 +152,41 @@ export interface AddonDependency {
 }
 
 /**
- * fields from the addon's manifest.json
+ * Fields from the addon's manifest.json
  */
 export interface AddonIncompatibleAddon {
     /**
-     * Fields from the addon's manifest.json
+     * Field from the addon's manifest.json
      * This need to be configured identically to the addon's manifest.json
      * Leaving a field empty ignores it for the search.
      */
     title?: string,
-    creator?: string,
+
     /**
-     * packageVersion syntax follows: https://www.npmjs.com/package/semver
+     * Field from the addon's manifest.json
+     * This need to be configured identically to the addon's manifest.json
+     * Leaving a field empty ignores it for the search.
+     */
+    creator?: string,
+
+    /**
+     * Field from the addon's manifest.json
+     * This need to be configured identically to the addon's manifest.json
+     * Leaving a field empty ignores it for the search.
+     *
+     * This supports semver notation.
      */
     packageVersion?: string,
+
     /**
      * folder name in community - added later to show the user the corresponding folder name - not used for searching
      */
     folder?: string,
+
     /**
      * Description of the nature of the incompatibility to display to the user in a warning dialog
      */
-    description?: string
+    description?: string,
 }
 
 export interface AddonTechSpec {
@@ -202,7 +216,7 @@ export interface ConfigurationAspect {
     /**
      * The title of the page containing the choices
      */
-    title: string
+    title: string,
 
     /**
      * What to apply the list of desired choices to
@@ -255,7 +269,7 @@ export type AddonCategoryDefinition = DefinitionBase & {
     kind: 'addonCategory',
     key: string,
     title?: string,
-    styles?: ('align-bottom')[],
+    styles?: 'align-bottom'[],
 }
 
 export type ExternalApplicationDefinition = DefinitionBase & {
