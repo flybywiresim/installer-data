@@ -15,6 +15,11 @@ jobs:
       - name: Build config
         run: |
           npm run build -- pr-${{ github.event.number }}
+      - name: Upload to CloudFlare CDN
+        env:
+          CLOUDFLARE_BUCKET_PASSWORD: ${{ secrets.CLOUDFLARE_BUCKET_PASSWORD }}
+          CDN_BUCKET_DESTINATION: installer/config
+        run: ./scripts/cdn-cf.sh ./dist $CDN_BUCKET_DESTINATION
       - name: Upload to Bunny CDN
         env:
           BUNNY_BUCKET_PASSWORD: ${{ secrets.BUNNY_BUCKET_PASSWORD }}
