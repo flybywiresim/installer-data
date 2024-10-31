@@ -278,7 +278,7 @@ const config: Configuration = {
                             '* Use frame generation \n\n' + 
                             '* Virtual Reality (VR) \n\n' + 
                             '* DX12 beta \n\n' +
-                            '* or are otherwise limited by your graphics card VRAM amount. [link to system requirements docs] (will provide).',
+                            '* or are otherwise limited by your graphics card VRAM amount. [System Requirements](https://docs.flybywiresim.com/aircraft/install/installation/#estimated-system-requirements-for-a380x)',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'fragmenter',
