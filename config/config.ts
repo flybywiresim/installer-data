@@ -249,12 +249,55 @@ const config: Configuration = {
                     aircraftName: 'A380-842',
                     titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a380x/dark.svg',
                     titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a380x/light.svg',
-                    enabled: false,
+                    enabled: true,
                     backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-a380x/a380x.png'],
                     shortDescription: 'Airbus A380-800',
                     description: '',
-                    targetDirectory: 'A380',
-                    tracks: [],
+                    techSpecs: [
+                        {
+                            name: 'Engines',
+                            value: 'RR Trent 972B-84'
+                        },
+                        {
+                            name: 'APU',
+                            value: 'PW980'
+                        }
+                    ],
+                    targetDirectory: 'flybywire-aircraft-a380-842',
+                    alternativeNames: [
+                        'A380X',
+                        'a380x'
+                    ],
+                    tracks: [
+                        {
+                            name: 'Stable (4K)',
+                            key: 'a32nx-stable-4k',
+                            url: 'https://flybywirecdn.com/addons/a380x/stable-4k',
+                            alternativeUrls: [],
+                            description: 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced stutters, better performance, with HIGH or lower texture resolution. Additionally, if you intend to use the following:\n\n' +
+                            '* Use frame generation \n\n' + 
+                            '* Virtual Reality (VR) \n\n' + 
+                            '* DX12 beta \n\n' +
+                            '* or are otherwise limited by your graphics card VRAM amount. [link to system requirements docs] (will provide).',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                        },
+                        {
+                            name: 'Stable (8K)',
+                            key: 'a32nx-stable-8k',
+                            url: 'https://flybywirecdn.com/addons/a380x/stable-8k',
+                            alternativeUrls: [],
+                            description: 'Includes our 8K full resolution cabin, cockpit and exterior textures. This is the full fidelity experience and our recommendation if your system is powerful enough to support it. Realistic and in high detail.\n\n' +
+                            '* DX11 recommended \n\n' + 
+                            '* HIGH or lower texture resolution setting recommended \n\n',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                        },
+                    ],
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
                 {
