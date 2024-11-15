@@ -345,7 +345,7 @@ const config: Configuration = {
                         // description: a short description of why the addon is incompatible
                         {
                             title: 'Mets747 FBW A380 Lights Mod',
-                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides " +
+                            description: "It is required to remove this add-on before installing and using the A380X. This add-on overrides " +
                                 "A32NX components and may render the A32NX unusable."
                         },
                     ],
