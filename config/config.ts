@@ -311,7 +311,7 @@ const config: Configuration = {
                                 'Although every change is QA-tested bugs are a little more likely. It updates whenever something is added to ' +
                                 'the \'master\' branch on Github. Please visit our discord for support. \n\n' +
                                 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
-                                'stutters, better performance, with HIGH or lower texture resolution. Additionally, if you intend to use the ' +
+                                'stutters, better performance, with HIGH or lower texture resolution. Especially, if you intend to use the ' +
                                 'following:\n\n' +
                                 '* Use frame generation \n\n' +
                                 '* Virtual Reality (VR) \n\n' +
