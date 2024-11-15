@@ -314,7 +314,7 @@ const config: Configuration = {
                         },
                         {
                             name: 'Development (4k)',
-                            key: 'a380x-dev-8k',
+                            key: 'a380x-dev-4k',
                             url: 'https://flybywirecdn.com/addons/a380x/master-4k',
                             alternativeUrls: [ ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
