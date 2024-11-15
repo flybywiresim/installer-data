@@ -274,11 +274,14 @@ const config: Configuration = {
                             key: 'a380x-stable-4k',
                             url: 'https://flybywirecdn.com/addons/a380x/stable-4k',
                             alternativeUrls: [],
-                            description: 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced stutters, better performance, with HIGH or lower texture resolution. Additionally, if you intend to use the following:\n\n' +
-                            '* Use frame generation \n\n' +
-                            '* Virtual Reality (VR) \n\n' +
-                            '* DX12 beta \n\n' +
-                            '* or are otherwise limited by your graphics card VRAM amount. [System Requirements](https://docs.flybywiresim.com/aircraft/install/installation/#estimated-system-requirements-for-a380x)',
+                            description: 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
+                                'stutters, better performance, with HIGH or lower texture resolution. Additionally, if you intend to use the ' +
+                                'following:\n\n' +
+                                '* Use frame generation \n\n' +
+                                '* Virtual Reality (VR) \n\n' +
+                                '* DX12 beta \n\n' +
+                                '* or are otherwise limited by your graphics card VRAM amount. ' +
+                                '[System Requirements](https://docs.flybywiresim.com/aircraft/install/installation/#estimated-system-requirements-for-a380x)',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'fragmenter',
@@ -289,9 +292,11 @@ const config: Configuration = {
                             key: 'a380x-stable-8k',
                             url: 'https://flybywirecdn.com/addons/a380x/stable-8k',
                             alternativeUrls: [],
-                            description: 'Includes our 8K full resolution cabin, cockpit and exterior textures. This is the full fidelity experience and our recommendation if your system is powerful enough to support it. Realistic and in high detail.\n\n' +
-                            '* DX11 recommended \n\n' +
-                            '* HIGH or lower texture resolution setting recommended \n\n',
+                            description: 'Includes our 8K full resolution cabin, cockpit and exterior textures. This is the full fidelity ' +
+                                'experience and our recommendation if your system is powerful enough to support it. Realistic and in high ' +
+                                'detail.\n\n' +
+                                '* DX11 recommended \n\n' +
+                                '* HIGH or lower texture resolution setting recommended \n\n',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'fragmenter',
@@ -303,10 +308,15 @@ const config: Configuration = {
                             url: 'https://flybywirecdn.com/addons/a380x/master-4k',
                             alternativeUrls: [ ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
-                                'Although every change is QA-tested bugs are a little more likely. It updates whenever something is added to the \'master\' ' +
-                                'branch on Github. Please visit our discord for support.' +
-                                '* DX11 recommended \n\n' +
-                                '* HIGH or lower texture resolution setting recommended \n\n',
+                                'Although every change is QA-tested bugs are a little more likely. It updates whenever something is added to ' +
+                                'the \'master\' branch on Github. Please visit our discord for support. \n\n' +
+                                'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
+                                'stutters, better performance, with HIGH or lower texture resolution. Additionally, if you intend to use the ' +
+                                'following:\n\n' +
+                                '* Use frame generation \n\n' +
+                                '* Virtual Reality (VR) \n\n' +
+                                '* DX12 beta \n\n' +
+                                '* or are otherwise limited by your graphics card VRAM amount. ',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'fragmenter',
@@ -319,7 +329,7 @@ const config: Configuration = {
                             alternativeUrls: [ ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Although every change is QA-tested bugs are a little more likely. It updates whenever something is added to the \'master\' ' +
-                                'branch on Github. Please visit our discord for support.' +
+                                'branch on Github. Please visit our discord for support. \n\n' +
                                 '* DX11 recommended \n\n' +
                                 '* HIGH or lower texture resolution setting recommended \n\n',
                             isExperimental: false,
