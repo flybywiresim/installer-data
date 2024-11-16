@@ -328,7 +328,7 @@ const config: Configuration = {
                             url: 'https://flybywirecdn.com/addons/a380x/master-8k',
                             alternativeUrls: [],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
-                                'Although every change is QA-tested bugs are a little more likely. It updates whenever something is added to ' +
+                                'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
                                 'the \'master\' branch on Github. Please visit our discord for support. \n\n' +
                                 '* DX11 recommended \n\n' +
                                 '* HIGH or lower texture resolution setting recommended \n\n',
