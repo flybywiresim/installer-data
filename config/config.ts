@@ -345,9 +345,26 @@ const config: Configuration = {
                         // description: a short description of why the addon is incompatible
                         {
                             title: 'Mets747 FBW A380 Lights Mod',
+                            description: "It is recommended to remove this add-on before installing and using the A380X. This add-on overrides " +
+                                "A380X components and may render the A380X unusable."
+                        },
+                        {
+                            title: 'fbw a380 light mod',
                             description: "It is required to remove this add-on before installing and using the A380X. This add-on overrides " +
                                 "A380X components and may render the A380X unusable."
                         },
+                        {
+                            title: 'Super6uo FBW A380X Realistic Light Enhancement',
+                            description: "It is required to remove this add-on before installing and using the A380X. This add-on overrides " +
+                                "A380X components and may render the A380X unusable."
+                        },
+                        {
+                            title: 'FlyByWire Airbus A380X OIT Functionality',
+                            description: "It is required to remove this add-on before installing and using the A380X. This add-on overrides " +
+                                "A380X components and may render the A380X unusable."
+                        },
+
+
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
