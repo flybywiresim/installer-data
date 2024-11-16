@@ -117,7 +117,7 @@ const config: Configuration = {
                                 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
-                                'Although every change is QA-tested bugs are a little more likely. It updates whenever something is added to the \'master\' ' +
+                                'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to the \'master\' ' +
                                 'branch on Github. Please visit our discord for support.',
                             isExperimental: false,
                             releaseModel: {
