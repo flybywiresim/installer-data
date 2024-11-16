@@ -308,7 +308,7 @@ const config: Configuration = {
                             url: 'https://flybywirecdn.com/addons/a380x/master-4k',
                             alternativeUrls: [],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
-                                'Although every change is QA-tested bugs are a little more likely. It updates whenever something is added to ' +
+                                'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
                                 'the \'master\' branch on Github. Please visit our discord for support. \n\n' +
                                 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
                                 'stutters, better performance, with HIGH or lower texture resolution. Especially, if you intend to use the ' +
