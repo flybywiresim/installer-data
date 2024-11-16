@@ -349,7 +349,7 @@ const config: Configuration = {
                                 "A380X components and may render the A380X unusable."
                         },
                         {
-                            title: 'fbw a380 light mod',
+                            title: 'a380_light_mod',
                             description: "It is required to remove this add-on before installing and using the A380X. This add-on overrides " +
                                 "A380X components and may render the A380X unusable."
                         },
