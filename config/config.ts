@@ -303,7 +303,7 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Development (4K)',
+                            name: 'Development (4000K)',
                             key: 'a380x-dev-4k',
                             url: 'https://flybywirecdn.com/addons/a380x/master-4k',
                             alternativeUrls: [],
@@ -323,7 +323,7 @@ const config: Configuration = {
                             },
                         },
                         {
-                            name: 'Development (8K)',
+                            name: 'Development (8000K)',
                             key: 'a380x-dev-8k',
                             url: 'https://flybywirecdn.com/addons/a380x/master-8k',
                             alternativeUrls: [],
