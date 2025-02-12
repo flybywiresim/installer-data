@@ -91,9 +91,9 @@ const config: Configuration = {
                                  // move bunnycdn users to cloudflare
                                 'https://cdn.flybywiresim.com/addons/a32nx/stable',
                             ],
-                            description: 'Stable is our variant that has the least bugs and best performance. ' +
-                                'This version will not always be up to date but we guarantee its compatibility ' +
-                                'with each major patch from MSFS.',
+                            description: 'The stable edition is for those who need a stable home cockpit API, or controlled upgrades every few months. ' +
+                                'This edition will always be behind the development edition in both features and fixes, ' +
+                                'but it will receive compatibility patches if required for MSFS updates. Please visit our discord for support.',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'fragmenter',
@@ -116,9 +116,9 @@ const config: Configuration = {
                                 'https://cdn.flybywiresim.com/addons/a32nx/experimental',
                                 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
                             ],
-                            description: 'Development will have the latest features that will end up in the next stable. ' +
-                                'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to the \'master\' ' +
-                                'branch on Github. Please visit our discord for support.',
+                            description: 'The development edition has all of the latest features and bug fixes that will end up in the next stable edition release. ' +
+                                'Although every change is QA-tested, bugs sometimes slip in; please reach out to us if you find any. ' +
+                                'Updates occur whenever something is added to the \'master\' branch on Github. Please visit our discord for support.',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'fragmenter',
