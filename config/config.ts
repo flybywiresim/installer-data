@@ -363,8 +363,11 @@ const config: Configuration = {
                             description: "It is required to remove this add-on before installing and using the A380X. This add-on overrides " +
                                 "A380X components and may render the A380X unusable."
                         },
-
-
+                        {
+                            title: 'Bright_Light_A380',
+                            description: "It is required to remove this add-on before installing and using the A380X. This add-on overrides " +
+                                "A380X components and may render the A380X unusable."
+			},
                     ],
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
