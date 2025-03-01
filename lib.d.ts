@@ -1,3 +1,8 @@
+export enum Simulators {
+    Msfs2020 = 'msfs2020',
+    Msfs2024 = 'msfs2024',
+  }
+
 export interface ExternalLink {
     url: string,
     title: string,
@@ -94,6 +99,7 @@ export interface AddonMyInstallPageConfiguration {
 export interface Addon {
     key: string,
     name: string,
+    simulator: `${Simulators}` | Simulators,
     repoOwner?: string,
     repoName?: string,
     category?: `@${string}`,

@@ -51,6 +51,7 @@ const config: Configuration = {
                 {
                     key: 'A32NX',
                     name: 'A32NX',
+                    simulator: 'msfs2020',
                     repoOwner: 'flybywiresim',
                     repoName: 'aircraft',
                     category: '@aircraft',
@@ -58,7 +59,6 @@ const config: Configuration = {
                     titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a32nx/dark.svg',
                     titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a32nx/light.svg',
                     enabled: true,
-                    // TODO: Change this
                     backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-a32nx/1.png'],
                     shortDescription: 'Airbus A320neo Series',
                     description: 'The A320neo (new engine option) is one of many upgrades introduced by Airbus to help maintain ' +
@@ -243,6 +243,7 @@ const config: Configuration = {
                 {
                     name: 'A380X',
                     key: 'A380X',
+                    simulator: 'msfs2020',
                     repoOwner: 'flybywiresim',
                     repoName: 'aircraft',
                     category: '@aircraft',
@@ -371,6 +372,7 @@ const config: Configuration = {
                 {
                     name: 'KFBW',
                     key: 'KFBW',
+                    simulator: 'msfs2020',
                     category: '@scenery',
                     aircraftName: 'FBW Headquarters',
                     enabled: true,
@@ -407,6 +409,7 @@ const config: Configuration = {
                 {
                     name: 'SimBridge',
                     key: 'simbridge',
+                    simulator: 'msfs2020',
                     category: '@simbridge',
                     repoOwner: 'flybywiresim',
                     repoName: 'simbridge',
@@ -499,6 +502,7 @@ const config: Configuration = {
                 {
                     key: '74S',
                     name: '74S',
+                    simulator: 'msfs2020',
                     repoOwner: 'saltysimulations',
                     repoName: 'salty-747',
                     category: '@aircraft',
@@ -590,6 +594,7 @@ const config: Configuration = {
                 {
                     key: 'traffic-base-models',
                     name: 'FSLTL Traffic',
+                    simulator: 'msfs2020',
                     aircraftName: 'FSLTL Traffic',
                     titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/base-models/dark.svg',
                     titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/base-models/light.svg',
@@ -621,6 +626,7 @@ const config: Configuration = {
                 {
                     key: 'traffic-injector',
                     name: 'FSLTL Injector',
+                    simulator: 'msfs2020',
                     aircraftName: 'FSLTL Traffic',
                     titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/dark.svg',
                     titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/light.svg',
