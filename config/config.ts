@@ -49,7 +49,7 @@ const config: Configuration = {
             ],
             addons: [
                 {
-                    key: 'A32NX',
+                    key: 'a32nx-msfs2020',
                     name: 'A32NX',
                     simulator: 'msfs2020',
                     repoOwner: 'flybywiresim',
@@ -239,6 +239,176 @@ const config: Configuration = {
                         ],
                     },
                     disallowedRunningExternalApps: ['@/msfs', '@/mcdu-server'],
+                },
+                {
+                    key: 'a32nx-msfs2024',
+                    name: 'A32NX',
+                    simulator: 'msfs2024',
+                    repoOwner: 'flybywiresim',
+                    repoName: 'aircraft',
+                    category: '@aircraft',
+                    aircraftName: 'A320-251N',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a32nx/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fbw-a32nx/light.svg',
+                    enabled: true,
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fbw-a32nx/1.png'],
+                    shortDescription: 'Airbus A320neo Series',
+                    description: 'The A320neo (new engine option) is one of many upgrades introduced by Airbus to help maintain ' +
+                        'its A320 product line’s position as the world’s most advanced and fuel-efficient single-aisle ' +
+                        'aircraft family. The baseline A320neo jetliner has a choice of two new-generation engines ' +
+                        '(the PurePower PW1100G-JM from Pratt and Whitney and the LEAP-1A from CFM International) ' +
+                        'and features large, fuel-saving wingtip devices known as Sharklets.',
+                    techSpecs: [
+                        {
+                            name: 'Engines',
+                            value: 'CFM LEAP 1A-26',
+                        },
+                        {
+                            name: 'APU',
+                            value: 'APS3200',
+                        },
+                    ],
+                    targetDirectory: 'flybywire-aircraft-a320-neo',
+                    alternativeNames: [
+                        'A32NX',
+                        'a32nx',
+                    ],
+                    tracks: [
+                        {
+                            name: 'Stable',
+                            key: 'a32nx-stable',
+                            url: 'https://flybywirecdn.com/addons/a32nx/stable',
+                            alternativeUrls: [
+                                'external/a32nx/stable',
+                            ],
+                            description: 'The stable edition is for those who need a stable home cockpit API, or controlled upgrades every few months. ' +
+                                'This edition will always be behind the development edition in both features and fixes, ' +
+                                'but it will receive compatibility patches if required for MSFS updates. Please visit our discord for support.',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                        },
+                        {
+                            name: 'Development',
+                            key: 'a32nx-dev',
+                            url: 'https://flybywirecdn.com/addons/a32nx/master',
+                            alternativeUrls: [
+                                'external/a32nx/master',
+                            ],
+                            description: 'The development edition has all of the latest features and bug fixes that will end up in the next stable edition release. ' +
+                                'Although every change is QA-tested, bugs sometimes slip in; please reach out to us if you find any. ' +
+                                'Updates occur whenever something is added to the \'master\' branch on Github. Please visit our discord for support.',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                        },
+                    ],
+                    dependencies: [
+                        {
+                            addon: '@flybywiresim/simbridge',
+                            optional: true,
+                            modalText: 'SimBridge allows the A32NX to expose remote tools like the Web MCDU, as well as use the external terrain database.',
+                        },
+                    ],
+                    incompatibleAddons: [
+                        // title: the exact title as it appears in the manifest.json
+                        // creator: the exact creator as it appears in the manifest.json
+                        // packageVersion syntax follows: https://www.npmjs.com/package/semver
+                        // description: a short description of why the addon is incompatible
+                        {
+                            title: 'FlightFlow | IMPROVED TEXTURES MOD',
+                            creator: 'FlightFlow',
+                            description: "It is recommended to remove this add-on/mod before installing and using the A32NX. This add-on/mod is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
+                        },
+                        {
+                            title: 'Horizon Simulations A321neo',
+                            // packageVersion: '<0.4.0', see https://discord.com/channels/738864299392630914/785976111875751956/1055617417189011546
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
+                        },
+                        {
+                            title: 'LVFR A321neo FBW A32NX Compatibility Mod',
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and to break the A32NX.",
+                        },
+                        {
+                            title: 'LVFR A321neo Extreme',
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
+                        },
+                        {
+                            title: 'lvfr-airbus-a319-ceo-fbw-compatibility',
+                            // creator: "FlyByWire Simulations, karuchie",
+                            // packageVersion: '<0.6.1',
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX.",
+                        },
+                        {
+                            title: '[MOD] Mugz FBW A32NX Dev',
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: '[MOD] Mugz FBW A32NX Stable',
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: 'Toolbar Pushback',
+                            creator: "AmbitiousPilots",
+                            description: "This add-on sometimes causes performance issues and also sometimes prevents the A32NX from taxiing. Consider removing it if you experience these issues.",
+                        },
+                        {
+                            title: 'Asobo_A320_A (A32NX Converted)',
+                            creator: "UnitDeath",
+                            description: "It is required to remove this livery before installing and using the A32NX as it breaks the A32NX",
+                        },
+                        {
+                            title: 'xeffect-320',
+                            creator: "swingbird",
+                            // packageVersion: '<0.1.2', (the mod does provide accurate version info in manifest.json)
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. It is known known to override A32NX files and to break the A32NX.",
+                        },
+                        {
+                            title: "z-Newlight-settinglight-FBW-A320NX-dev",
+                            creator: "Nicottine",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: "z-Newlight-settinglight-FBW-A320NX-stable",
+                            creator: "Nicottine",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: "z-Newlight-settinglight-FBW-A320NX-EXP",
+                            creator: "Nicottine",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and renders the A32NX unusable.",
+                        },
+                        {
+                            title: "FBW A32NX Weather Radar Mod",
+                            creator: "",
+                            description: "It is required to remove this add-on before installing and using the A32NX. This add-on overrides A32NX components and may render the A32NX unusable."
+                        },
+                        {
+                            title: "China Eastern",
+                            creator: "JasonC68",
+                            description: "It is recommended to remove this add-on before installing and using the A32NX. This add-on is known to override A32NX components and cause unexpected behavior and issues when flying the A32NX."
+                        }
+                    ],
+                    myInstallPage: {
+                        links: [
+                            {
+                                url: 'https://docs.flybywiresim.com/fbw-a32nx/',
+                                title: 'Documentation',
+                            },
+                        ],
+                        directories: [
+                            {
+                                location: {
+                                    in: 'packageCache',
+                                    path: 'work',
+                                },
+                                title: 'Work Folder',
+                            },
+                        ],
+                    },
+                    disallowedRunningExternalApps: ['@/msfs'],
                 },
                 {
                     name: 'A380X',
