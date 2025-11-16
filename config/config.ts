@@ -49,7 +49,7 @@ const config: Configuration = {
             ],
             addons: [
                 {
-                    key: 'a32nx-msfs2020',
+                    key: 'a32nx',
                     name: 'A32NX',
                     simulator: 'msfs2020',
                     repoOwner: 'flybywiresim',
@@ -83,7 +83,7 @@ const config: Configuration = {
                     ],
                     dependencies: [
                         {
-                            addon: '@flybywiresim/simbridge-msfs2020',
+                            addon: '@flybywiresim/simbridge',
                             optional: true,
                             modalText: 'SimBridge allows the A32NX to expose remote tools like the Web MCDU, as well as use the external terrain database.',
                         },
@@ -241,7 +241,7 @@ const config: Configuration = {
                     disallowedRunningExternalApps: ['@/msfs', '@/mcdu-server'],
                 },
                 {
-                    key: 'a380x-msfs2020',
+                    key: 'a380x',
                     name: 'A380X',
                     simulator: 'msfs2020',
                     repoOwner: 'flybywiresim',
@@ -271,7 +271,7 @@ const config: Configuration = {
                     ],
                     dependencies: [
                         {
-                            addon: '@flybywiresim/simbridge-msfs2020',
+                            addon: '@flybywiresim/simbridge',
                             optional: true,
                             modalText: 'SimBridge allows the A380X to use the external terrain database.',
                         },
@@ -414,7 +414,7 @@ const config: Configuration = {
                     ],
                 },
                 {
-                    key: 'simbridge-msfs2020',
+                    key: 'simbridge',
                     name: 'SimBridge',
                     simulator: 'msfs2020',
                     category: '@simbridge',
