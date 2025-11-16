@@ -18,8 +18,8 @@ done
 echo "Purging cache"
 
 # Check if required environment variables are set
-if [ -z "$CLOUDFLARE_ZONE_ID" ]; then
-    echo "Error: CLOUDFLARE_ZONE_ID environment variable is not set"
+if [ -z "$CLOUDFLARE_CDN_ZONE_ID" ]; then
+    echo "Error: CLOUDFLARE_CDN_ZONE_ID environment variable is not set"
     exit 1
 fi
 
@@ -47,7 +47,7 @@ PURGE_RESPONSE=$(curl -s -X POST \
     -H "Authorization: Bearer $CLOUDFLARE_PURGE_TOKEN" \
     -H "Content-Type: application/json" \
     -d "$PURGE_JSON" \
-    "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/purge_cache")
+    "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_CDN_ZONE_ID/purge_cache")
 
 echo "Purge response: $PURGE_RESPONSE"
 
