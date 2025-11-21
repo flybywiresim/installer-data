@@ -224,7 +224,7 @@ const config: Configuration = {
                     myInstallPage: {
                         links: [
                             {
-                                url: 'https://docs.flybywiresim.com/fbw-a32nx/',
+                                url: 'https://docs.flybywiresim.com/aircraft/a32nx/',
                                 title: 'Documentation',
                             },
                         ],
