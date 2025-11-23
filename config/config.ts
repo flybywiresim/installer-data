@@ -964,7 +964,7 @@ const config: Configuration = {
             ],
             addons: [
                 {
-                    key: 'traffic-base-models',
+                    key: 'traffic-base-models-msfs2020',
                     name: 'FSLTL Traffic',
                     simulator: 'msfs2020',
                     aircraftName: 'FSLTL Traffic',
@@ -996,9 +996,76 @@ const config: Configuration = {
                     disallowedRunningExternalApps: ['@/msfs'],
                 },
                 {
-                    key: 'traffic-injector',
+                    key: 'traffic-injector-msfs2020',
                     name: 'FSLTL Injector',
                     simulator: 'msfs2020',
+                    aircraftName: 'FSLTL Traffic',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/light.svg',
+                    enabled: true,
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
+                    shortDescription: 'FSLTL Traffic Injector Software',
+                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n' +
+                        '- Live IFR and VFR traffic based on Flightradar24\n\n' +
+                        '- Parked aircraft based on historic real data for immersive full airports\n\n' +
+                        '- Ability to have any combination of IFR, VFR and parked aircraft',
+                    targetDirectory: 'fsltl-traffic-injector',
+                    tracks: [
+                        {
+                            name: 'Stable',
+                            key: 'release',
+                            url: 'https://github.com/FSLiveTrafficLiveries/FSLTL_Injector_Releases/releases/latest/download/',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                            description: 'FSLTL Traffic Injector for use on stable versions of MSFS 2020/2024.\n\n' +
+                                'Follow the user guide at https://www.fslivetrafficliveries.com/user-guide/ before use.',
+                        },
+                    ],
+                    backgroundService: {
+                        executableFileBasename: 'fsltl-trafficinjector',
+                        runCheckExternalAppRef: '@/traffic-injector-app',
+                        enableAutostartConfiguration: false,
+                    },
+                    disallowedRunningExternalApps: ['@/traffic-injector-app'],
+                },
+                {
+                    key: 'traffic-base-models-msfs2024',
+                    name: 'FSLTL Traffic',
+                    simulator: 'msfs2024',
+                    aircraftName: 'FSLTL Traffic',
+                    titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/base-models/dark.svg',
+                    titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/base-models/light.svg',
+                    enabled: true,
+                    backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
+                    shortDescription: 'FSLTL Traffic Base Models',
+                    description:
+                        'FSLTL is a free standalone real-time online traffic overhaul and VATSIM model-matching solution for MSFS.\n\n' +
+                        'Utilising native glTF models and MSFS independent online IFR/VFR traffic injection system with stock ATC interaction based on Flightradar24.\n\n' +
+                        'This is the base model / livery pack required for FSLTL Injector, MSFS default live traffic or VATSIM use.',
+                    targetDirectory: 'fsltl-traffic-base',
+                    alternativeNames: [],
+                    tracks: [
+                        {
+                            name: 'Stable',
+                            key: 'release',
+                            url: 'https://github.com/FSLiveTrafficLiveries/base/releases/latest/download/',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'CDN',
+                            },
+                            description: 'Stable release of the aircraft models, liveries and VMR file.\n\n' +
+                                'This packages is required to see matched models / liveries if you are using FSLTL Injector, MSFS default live traffic or VATSIM.\n\n' +
+                                'A vmr file is provided in the package for VATSIM client use.',
+                        },
+                    ],
+                    disallowedRunningExternalApps: ['@/msfs'],
+                },
+                {
+                    key: 'traffic-injector-msfs2024',
+                    name: 'FSLTL Injector',
+                    simulator: 'msfs2024',
                     aircraftName: 'FSLTL Traffic',
                     titleImageUrl: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/dark.svg',
                     titleImageUrlSelected: 'https://flybywirecdn.com/installer/media-assets/addon-titles/fsltl/injector/light.svg',
