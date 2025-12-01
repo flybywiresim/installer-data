@@ -282,6 +282,21 @@ const config: Configuration = {
                     ],
                     tracks: [
                         {
+                            name: 'Stable',
+                            key: 'a32nx-stable',
+                            url: 'https://flybywirecdn.com/addons/a32nx/stable',
+                            alternativeUrls: [
+                                'external/a32nx/stable',
+                            ],
+                            description: 'The stable edition is for those who need a stable home cockpit API, or controlled upgrades every few months. ' +
+                                'This edition will always be behind the development edition in both features and fixes, ' +
+                                'but it will receive compatibility patches if required for MSFS updates. Please visit our discord for support.',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                        },
+                        {
                             name: 'Development',
                             key: 'a32nx-dev',
                             url: 'https://flybywirecdn.com/addons/a32nx/master',
@@ -568,6 +583,39 @@ const config: Configuration = {
                         },
                     ],
                     tracks: [
+                        {
+                            name: 'Stable (4K)',
+                            key: 'a380x-stable-4k',
+                            url: 'https://flybywirecdn.com/addons/a380x/stable-4k',
+                            alternativeUrls: [],
+                            description: 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
+                                'stutters, better performance, with HIGH or lower texture resolution. Especially, if you intend to use the ' +
+                                'following:\n\n' +
+                                '* Use frame generation \n\n' +
+                                '* Virtual Reality (VR) \n\n' +
+                                '* DX12 beta \n\n' +
+                                '* or are otherwise limited by your graphics card VRAM amount. ' +
+                                '[System Requirements](https://docs.flybywiresim.com/aircraft/install/installation/#estimated-system-requirements-for-a380x)',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                        },
+                        {
+                            name: 'Stable (8K)',
+                            key: 'a380x-stable-8k',
+                            url: 'https://flybywirecdn.com/addons/a380x/stable-8k',
+                            alternativeUrls: [],
+                            description: 'Includes our 8K full resolution cabin, cockpit and exterior textures. This is the full fidelity ' +
+                                'experience and our recommendation if your system is powerful enough to support it. Realistic and in high ' +
+                                'detail.\n\n' +
+                                '* DX11 recommended \n\n' +
+                                '* HIGH or lower texture resolution setting recommended \n\n',
+                            isExperimental: false,
+                            releaseModel: {
+                                type: 'fragmenter',
+                            },
+                        },
                         {
                             name: 'Development (4K)',
                             key: 'a380x-dev-4k',
