@@ -1020,7 +1020,7 @@ const config: Configuration = {
                                 type: 'fragmenter',
                             },
                             description: 'FSLTL Traffic Injector for use on stable versions of MSFS 2020/2024.\n\n' +
-                                'Follow the user guide at https://www.fslivetrafficliveries.com/user-guide/ before use.',
+                                'Follow the [user guide](https://www.fslivetrafficliveries.com/user-guide/) before use.',
                         },
                     ],
                     backgroundService: {
