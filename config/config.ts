@@ -763,7 +763,7 @@ const config: Configuration = {
                     myInstallPage: {
                         links: [
                             {
-                                url: 'https://docs.flybywiresim.com/simbridge/',
+                                url: 'https://docs.flybywiresim.com/tools/simbridge/',
                                 title: 'Documentation',
                             },
                         ],
@@ -819,7 +819,7 @@ const config: Configuration = {
                     myInstallPage: {
                         links: [
                             {
-                                url: 'https://docs.flybywiresim.com/simbridge/',
+                                url: 'https://docs.flybywiresim.com/tools/simbridge/',
                                 title: 'Documentation',
                             },
                         ],
