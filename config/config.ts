@@ -95,6 +95,9 @@ const config: Configuration = {
                             url: 'https://flybywirecdn.com/addons/msfs2020/a32nx/master',
                             alternativeUrls: [
                                 'external/msfs2020/a32nx/master',
+                                // pre-split
+                                'external/a32nx/master',
+                                'https://flybywirecdn.com/addons/a32nx/master',
                                 // move old experimental users over to dev
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw-cap',
                                 'https://cdn.flybywiresim.com/addons/a32nx/cfbw',
@@ -105,9 +108,6 @@ const config: Configuration = {
                                 'external/a32nx/experimental',
                                 'https://cdn.flybywiresim.com/addons/a32nx/experimental',
                                 'https://github.com/flybywiresim/a32nx/releases/download/assets/experimental/',
-                                // pre-split
-                                'external/a32nx/master',
-                                'https://flybywirecdn.com/addons/a32nx/master'
                             ],
                             description: 'The development edition has all of the latest features and bug fixes that will end up in the next stable edition release. ' +
                                 'Although every change is QA-tested, bugs sometimes slip in; please reach out to us if you find any. ' +
