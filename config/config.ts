@@ -127,7 +127,7 @@ const config: Configuration = {
                                 'https://cdn.flybywiresim.com/addons/a32nx/stable',
                                 // pre-split
                                 'external/a32nx/stable',
-                                'https://flybywirecdn.com/addons/a32nx/stable'
+                                'https://flybywirecdn.com/addons/a32nx/stable',
                             ],
                             description: 'The stable edition is for those who need a stable home cockpit API, or controlled upgrades every few months. ' +
                                 'This edition will always be behind the development edition in both features and fixes, ' +
@@ -313,7 +313,7 @@ const config: Configuration = {
                                 'external/msfs2024/a32nx/stable',
                                 // pre-split
                                 'external/a32nx/stable',
-                                'https://flybywirecdn.com/addons/a32nx/stable'
+                                'https://flybywirecdn.com/addons/a32nx/stable',
                             ],
                             description: 'The stable edition is for those who need a stable home cockpit API, or controlled upgrades every few months. ' +
                                 'This edition will always be behind the development edition in both features and fixes, ' +
@@ -467,7 +467,7 @@ const config: Configuration = {
                                 'external/msfs2020/a380x/master-4k',
                                 //pre-split
                                 'external/a380x/master-4k',
-                                'https://flybywirecdn.com/addons/a380x/master-4k'
+                                'https://flybywirecdn.com/addons/a380x/master-4k',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
@@ -492,7 +492,7 @@ const config: Configuration = {
                                 'external/msfs2020/a380x/master-8k',
                                 //pre-split
                                 'external/a380x/master-8k',
-                                'https://flybywirecdn.com/addons/a380x/master-8k'
+                                'https://flybywirecdn.com/addons/a380x/master-8k',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
@@ -512,7 +512,7 @@ const config: Configuration = {
                                 'external/msfs2020/a380x/stable-4k',
                                 //pre-split
                                 'external/a380x/stable-4k',
-                                'https://flybywirecdn.com/addons/a380x/stable-4k'
+                                'https://flybywirecdn.com/addons/a380x/stable-4k',
                             ],
                             description: 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
                                 'stutters, better performance, with HIGH or lower texture resolution. Especially, if you intend to use the ' +
@@ -535,7 +535,7 @@ const config: Configuration = {
                                 'external/msfs2020/a380x/stable-8k',
                                 //pre-split
                                 'external/a380x/stable-8k',
-                                'https://flybywirecdn.com/addons/a380x/stable-8k'
+                                'https://flybywirecdn.com/addons/a380x/stable-8k',
                             ],
                             description: 'Includes our 8K full resolution cabin, cockpit and exterior textures. This is the full fidelity ' +
                                 'experience and our recommendation if your system is powerful enough to support it. Realistic and in high ' +
@@ -623,7 +623,7 @@ const config: Configuration = {
                                 'external/msfs2024/a380x/master-4k',
                                 //pre-split
                                 'external/a380x/master-4k',
-                                'https://flybywirecdn.com/addons/a380x/master-4k'
+                                'https://flybywirecdn.com/addons/a380x/master-4k',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
@@ -648,7 +648,7 @@ const config: Configuration = {
                                 'external/msfs2024/a380x/master-8k',
                                 //pre-split
                                 'external/a380x/master-8k',
-                                'https://flybywirecdn.com/addons/a380x/master-8k'
+                                'https://flybywirecdn.com/addons/a380x/master-8k',
                             ],
                             description: 'Development will have the latest features that will end up in the next stable. ' +
                                 'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
@@ -668,7 +668,7 @@ const config: Configuration = {
                                 'external/msfs2024/a380x/stable-4k',
                                 //pre-split
                                 'external/a380x/stable-4k',
-                                'https://flybywirecdn.com/addons/a380x/stable-4k'
+                                'https://flybywirecdn.com/addons/a380x/stable-4k',
                             ],
                             description: 'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
                                 'stutters, better performance, with HIGH or lower texture resolution. Especially, if you intend to use the ' +
@@ -691,7 +691,7 @@ const config: Configuration = {
                                 'external/msfs2024/a380x/stable-8k',
                                 //pre-split
                                 'external/a380x/stable-8k',
-                                'https://flybywirecdn.com/addons/a380x/stable-8k'
+                                'https://flybywirecdn.com/addons/a380x/stable-8k',
                             ],
                             description: 'Includes our 8K full resolution cabin, cockpit and exterior textures. This is the full fidelity ' +
                                 'experience and our recommendation if your system is powerful enough to support it. Realistic and in high ' +
