@@ -1005,10 +1005,8 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Injector Software',
-                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n' +
-                        '- Live IFR and VFR traffic based on Flightradar24\n\n' +
-                        '- Parked aircraft based on historic real data for immersive full airports\n\n' +
-                        '- Ability to have any combination of IFR, VFR and parked aircraft',
+                    description: 'FSLTL Traffic Injector - giving you a more immersive experience at airports globally!\n\n' +
+                        '- Parked aircraft based on historic real data for immersive full airports\n\n',
                     targetDirectory: 'fsltl-traffic-injector',
                     tracks: [
                         {
@@ -1072,10 +1070,8 @@ const config: Configuration = {
                     enabled: true,
                     backgroundImageUrls: ['https://flybywirecdn.com/installer/media-assets/addon-headers/fsltl/traffic/0.png'],
                     shortDescription: 'FSLTL Traffic Injector Software',
-                    description: 'FSLTL Live Traffic Injector - giving you a more immersive experience at airports globally!\n\n' +
-                        '- Live IFR and VFR traffic based on Flightradar24\n\n' +
-                        '- Parked aircraft based on historic real data for immersive full airports\n\n' +
-                        '- Ability to have any combination of IFR, VFR and parked aircraft',
+                    description: 'FSLTL Traffic Injector - giving you a more immersive experience at airports globally!\n\n' +
+                        '- Parked aircraft based on historic real data for immersive full airports\n\n',
                     targetDirectory: 'fsltl-traffic-injector',
                     tracks: [
                         {
@@ -1087,7 +1083,7 @@ const config: Configuration = {
                                 type: 'fragmenter',
                             },
                             description: 'FSLTL Traffic Injector for use on stable versions of MSFS 2020/2024.\n\n' +
-                                'Follow the user guide at https://www.fslivetrafficliveries.com/user-guide/ before use.',
+                                'Follow the [user guide](https://www.fslivetrafficliveries.com/user-guide/) before use.',
                         },
                     ],
                     backgroundService: {
