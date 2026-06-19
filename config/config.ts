@@ -632,39 +632,18 @@ const config: Configuration = {
                     ],
                     tracks: [
                         {
-                            name: 'Development (4K)',
+                            name: 'Development',
                             key: 'a380x-dev-4k',
-                            url: 'https://flybywirecdn.com/addons/msfs2024/a380x/master-4k',
+                            url: 'https://flybywirecdn.com/addons/msfs2024/a380x/master',
                             alternativeUrls: [
+                                'external/msfs2024/a380x/master',
+                                //pre-native
+                                'https://flybywirecdn.com/addons/msfs2024/a380x/master-4k',
                                 'external/msfs2024/a380x/master-4k',
-                                //pre-split
                                 'external/a380x/master-4k',
                                 'https://flybywirecdn.com/addons/a380x/master-4k',
-                            ],
-                            description:
-                                `<span style="color: rgb(255, 106, 0);">&#9888; Only for Microsoft Flight Simulator 2024 (MSFS2024).<br />For use with MSFS2020, configure your installer for the other simulator.<br /><a href="https://flybywiresim.com/notams/development-update-sim-specific-releases-for-msfs-2020-and-2024/" target="_blank" style="color: rgb(255, 106, 0);">Read more</a></span> \n\n` +
-                                'Development will have the latest features that will end up in the next stable. ' +
-                                'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
-                                'the \'master\' branch on Github. Please visit our discord for support. \n\n' +
-                                'Includes our 4K downscaled cabin, cockpit and exterior textures. Choose this option for reduced ' +
-                                'stutters, better performance, with HIGH or lower texture resolution. Especially, if you intend to use the ' +
-                                'following:\n\n' +
-                                '* Use frame generation \n\n' +
-                                '* Virtual Reality (VR) \n\n' +
-                                '* DX12 beta \n\n' +
-                                '* or are otherwise limited by your graphics card VRAM amount. ',
-                            isExperimental: false,
-                            releaseModel: {
-                                type: 'fragmenter',
-                            },
-                        },
-                        {
-                            name: 'Development (8K)',
-                            key: 'a380x-dev-8k',
-                            url: 'https://flybywirecdn.com/addons/msfs2024/a380x/master-8k',
-                            alternativeUrls: [
+                                'https://flybywirecdn.com/addons/msfs2024/a380x/master-4k',
                                 'external/msfs2024/a380x/master-8k',
-                                //pre-split
                                 'external/a380x/master-8k',
                                 'https://flybywirecdn.com/addons/a380x/master-8k',
                             ],
@@ -673,8 +652,7 @@ const config: Configuration = {
                                 'Development will have the latest features that will end up in the next stable. ' +
                                 'Although every change is QA-tested, bugs are a little more likely. It updates whenever something is added to ' +
                                 'the \'master\' branch on Github. Please visit our discord for support. \n\n' +
-                                '* DX11 recommended \n\n' +
-                                '* HIGH or lower texture resolution setting recommended \n\n',
+                                'Now fully MSFS 2024 native for both the best visual fidelity and the best performance!',
                             isExperimental: false,
                             releaseModel: {
                                 type: 'fragmenter',
